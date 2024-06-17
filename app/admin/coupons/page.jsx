@@ -18,7 +18,7 @@ import CouponActionDropdown from "@/components/admin/CouponActionDropdown";
 import { formatPrice } from "@/lib/utils";
 import { LoaderIcon } from "lucide-react";
 
-const page = () => {
+const Page = () => {
   const [fetchCoupons, setFetchCoupons] = useState(true);
   const [coupons, setCoupons] = useState([]);
 
@@ -218,4 +218,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

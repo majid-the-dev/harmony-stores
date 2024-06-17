@@ -32,7 +32,7 @@ const formSchema = z.object({
   path: ["confirmPassword"], // Field to display the error message
 });
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const { data: session, status } = useSession();
   const [isLoading, setIsLoading] = useState(false);
@@ -173,4 +173,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

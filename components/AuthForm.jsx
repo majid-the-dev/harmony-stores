@@ -153,9 +153,9 @@ const AuthForm = ({ type }) => {
             placeholder="Enter password"
           />
 
-          <div className="text-right -mt-8">
+          {/* <div className="text-right -mt-8">
             <Link href={'/auth/forgot-password'} className="text-orange-600 text-xs">Forgot password?</Link>
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-4">
             <Button

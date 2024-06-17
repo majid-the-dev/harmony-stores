@@ -1,6 +1,6 @@
 import AuthForm from "@/components/AuthForm";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="mx-auto max-w-2xl px-6 py-24">
         <p className="text-gray-500 text-xs font-medium mb-1">ENTER YOUR DETAILS TO SIGN IN</p>
@@ -13,4 +13,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

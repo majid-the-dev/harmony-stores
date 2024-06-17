@@ -29,7 +29,7 @@ const generateOrderId = () => {
   return `HNY-${randomDigits}`;
 };
 
-const page = () => {
+const Page = () => {
   const publicKey = "pk_test_5a0da603103a23a0d526fe61dd0847e11df22b37";
 
   const router = useRouter();
@@ -588,4 +588,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

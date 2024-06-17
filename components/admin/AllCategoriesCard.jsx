@@ -69,6 +69,7 @@ const AllCategoriesCard = () => {
           {categories?.length > 0 ? (
             categories.map((category) => (
               <Link
+                key={category.name}
                 href={"/admin/categories"}
                 className="flex items-center justify-between text-xs hover:bg-gray-200/40 rounded-lg px-2 py-2"
               >

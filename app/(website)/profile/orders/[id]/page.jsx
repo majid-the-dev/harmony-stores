@@ -7,7 +7,7 @@ import { formatDate, formatPrice } from "@/lib/utils";
 import { FaCircleCheck } from "react-icons/fa6";
 import LoadingScreen from "@/components/LoadingScreen";
 
-const page = () => {
+const Page = () => {
   const { id } = useParams();
 
   const [loading, setLoading] = useState(true);
@@ -195,4 +195,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

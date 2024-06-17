@@ -17,7 +17,7 @@ import CategoryActionDropdown from "@/components/admin/CategoryActionDropdown";
 import toast from "react-hot-toast";
 import { LoaderIcon } from "lucide-react";
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -184,4 +184,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

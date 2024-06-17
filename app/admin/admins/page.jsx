@@ -16,7 +16,7 @@ import { CgTrashEmpty } from "react-icons/cg";
 import toast from "react-hot-toast";
 import NewAdminModal from "@/components/admin/NewAdminModal";
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(true);
   const [admins, setAdmins] = useState([]);
 
@@ -122,4 +122,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

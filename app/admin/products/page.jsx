@@ -19,7 +19,7 @@ import { IoClose, IoSearch } from "react-icons/io5";
 import { formatPrice } from "@/lib/utils";
 import { LoaderIcon } from "lucide-react";
 
-const page = () => {
+const Page = () => {
   
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
@@ -203,4 +203,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

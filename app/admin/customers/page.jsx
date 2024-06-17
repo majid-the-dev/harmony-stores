@@ -16,7 +16,7 @@ import toast from "react-hot-toast";
 import { CgTrashEmpty } from "react-icons/cg";
 import { IoSearch } from "react-icons/io5";
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(true);
   const [customers, setCustomers] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -138,4 +138,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

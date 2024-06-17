@@ -16,7 +16,7 @@ import {
 import { formatDate, formatPrice } from "@/lib/utils";
 import OrderActionDropdown from "@/components/admin/OrderActionDropdown";
 
-const page = () => {
+const Page = () => {
   const [loading, setLoading] = useState(true);
   const [orders, setOrders] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -150,4 +150,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

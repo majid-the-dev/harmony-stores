@@ -60,7 +60,7 @@ const CustomerFeedback = () => {
                   alt="icon"
                 />
                 <p className="text-center text-gray-500 text-xs leading-5">
-                  I'm not very tech-savvy, but even I can navigate Harmony
+                  I&apos;m not very tech-savvy, but even I can navigate Harmony
                   Stores website with ease. Everything is so user-friendly and
                   well-organized. It makes online shopping a pleasure!
                 </p>
@@ -80,7 +80,7 @@ const CustomerFeedback = () => {
                   alt="icon"
                 />
                 <p className="text-center text-gray-500 text-xs leading-5">
-                  I'm not very tech-savvy, but even I can navigate Harmony
+                  I&apos;m not very tech-savvy, but even I can navigate Harmony
                   Stores website with ease. Everything is so user-friendly and
                   well-organized. It makes online shopping a pleasure!
                 </p>
