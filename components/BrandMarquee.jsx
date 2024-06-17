@@ -6,7 +6,7 @@ const BrandMarquee = () => {
   return (
     <div className="w-full px-4 md:px-6">
         <h1 className="text-[16px] md:text-xl text-left font-bold uppercase">
-          Popular Brands
+          Shop Brands
         </h1>
       <div className="mt-5">
         <div className="overflow-hidden">

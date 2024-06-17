@@ -6,9 +6,11 @@ import Marquee from "react-fast-marquee";
 const CustomerFeedback = () => {
   return (
     <div className="w-full px-4 md:px-6">
-      <div className="bg-white border border-gray-200/80 rounded-lg md:px-10 pt-10 pb-14">
-        <h1 className="text-xl md:text-2xl text-center md:text-left font-semibold">Customers Feedback</h1>
-        <div className="mt-6 md:mt-8 overflow-hidden">
+      <h1 className="text-[16px] md:text-xl text-left font-bold uppercase">
+        Customers Feedback
+      </h1>
+      <div className="mt-6 md:mt-8">
+        <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
             <div className="w-full max-w-md flex-shrink-0 mx-8 py-2">
               <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white rounded-lg shadow-md px-6 md:px-8 py-8 md:py-12">
