@@ -91,13 +91,11 @@
 
 // export default MobileNav;
 
-
-
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose
+  SheetClose,
 } from "@/components/ui/sheet";
 import {
   Accordion,
@@ -112,7 +110,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const fetchCategories = async () => {
-  const response = await fetch('/api/parent-categories'); // Ensure this is the correct API route
+  const response = await fetch("/api/parent-categories"); // Ensure this is the correct API route
   const data = await response.json();
   return data;
 };
@@ -123,24 +121,23 @@ const renderCategoryTree = (category) => {
       <AccordionItem key={category._id} value={category._id.toString()}>
         <AccordionTrigger className="text-sm font-semibold hover:no-underline">
           <Link href={`/category/${category._id}`}>
-            <SheetClose>
-              {category.name}
-            </SheetClose>
+            <SheetClose>{category.name}</SheetClose>
           </Link>
         </AccordionTrigger>
         <AccordionContent>
           <div className="pl-4 space-y-6">
-            {category.children.map(subcategory => (
+            {category.children.map((subcategory) => (
               <div key={subcategory._id}>
                 {subcategory.children.length > 0 ? (
                   <Accordion type="single" collapsible>
                     {renderCategoryTree(subcategory)}
                   </Accordion>
                 ) : (
-                  <Link href={`/category/${subcategory._id}`} className="text-sm font-semibold">
-                    <SheetClose>
-                      {subcategory.name}
-                    </SheetClose>
+                  <Link
+                    href={`/category/${subcategory._id}`}
+                    className="text-sm font-semibold"
+                  >
+                    <SheetClose>{subcategory.name}</SheetClose>
                   </Link>
                 )}
               </div>
@@ -151,16 +148,19 @@ const renderCategoryTree = (category) => {
     );
   } else {
     return (
-      <div key={category._id} className="text-sm font-medium hover:no-underline py-2 my-2">
-          <Link href={`/category/${category._id}`} className="block w-full text-left font-semibold">
-            <SheetClose>
-              {category.name}
-            </SheetClose>
-          </Link>
+      <div
+        key={category._id}
+        className="text-sm font-medium hover:no-underline py-2 my-2"
+      >
+        <Link
+          href={`/category/${category._id}`}
+          className="block w-full text-left font-semibold"
+        >
+          <SheetClose>{category.name}</SheetClose>
+        </Link>
       </div>
-    )
+    );
   }
-  
 };
 
 const MobileNav = () => {
@@ -178,17 +178,20 @@ const MobileNav = () => {
   return (
     <div>
       <Sheet>
-        <SheetTrigger>
-          <button className="block md:hidden gradient-bg text-white text-md rounded p-1 outline-none">
-            <FiMenu />
-          </button>
+        <SheetTrigger className="block md:hidden gradient-bg text-white text-md rounded p-1 outline-none">
+          <FiMenu />
         </SheetTrigger>
         <SheetContent side="left" className="bg-gray-100 border-none p-0">
-          <Image src={'/assets/dark--logo.png'} alt="logo" height={140} width={140} />
+          <Image
+            src={"/assets/dark--logo.png"}
+            alt="logo"
+            height={140}
+            width={140}
+          />
           <div className="">
             <nav className="flex flex-col items-start p-3">
               <Accordion type="single" collapsible className="w-full">
-                {categories.map(category => (
+                {categories.map((category) => (
                   <div key={category._id} className="w-full">
                     {renderCategoryTree(category)}
                   </div>

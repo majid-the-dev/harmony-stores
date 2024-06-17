@@ -158,26 +158,7 @@ const Navbar = () => {
 
         <div className="">
           <div className="flex items-center gap-6">
-            {/* <form className="relative xl:flex hidden">
-              <input
-                type="text"
-                placeholder="Search for products, brands here..."
-                className="bg-white w-[22rem] rounded-l-full outline-none px-10 py-3 placeholder:text-xs"
-              />
-              <button className="bg-black text-default text-sm font-medium rounded-r-full px-8">
-                Search
-              </button>
-              <BiSearch className="text-gray-400 absolute top-1/2 left-5 transform -translate-y-1/2 mt-[2px]" />
-            </form> */}
-
             <div className="flex items-center gap-5 md:gap-6">
-              {/* <Link href={"/"} className="relative">
-                <RiHeart3Line className="text-xl md:text-2xl" />
-                <span className="absolute -top-5 -right-3 gradient-bg text-white text-[10px] rounded-full px-1.5 py-0.5">
-                  0
-                </span>
-              </Link> */}
-              {/* <SearchModal /> */}
               <button onClick={toggleSearchBox}>
                 <FiSearch className="text-[18px] md:text-[22px]" />
               </button>

@@ -13,7 +13,7 @@ const TrendingCollections = () => {
       <h1 className="text-[18px] md:text-xl text-left font-bold uppercase">
         Trending Collections
       </h1>
-      <div className="py-12">
+      <div className="mt-6 md:mt-8">
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
             {/* <Link
@@ -24,7 +24,7 @@ const TrendingCollections = () => {
               Smartphones
             </Link> */}
 
-            <Link href={"/"} className="flex flex-col justify-center gap-5">
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/smartphone-banner.png"}
@@ -34,12 +34,12 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">
+              <span className="text-center text-xs font-medium">
                 Smartphones
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-5">
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/tablet-banner.png"}
@@ -49,10 +49,10 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">Tablets</span>
+              <span className="text-center text-xs font-medium">Tablets</span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-5">
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/laptop-banner.png"}
@@ -62,10 +62,10 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">Laptops</span>
+              <span className="text-center text-xs font-medium">Laptops</span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-5">
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/tv-banner.png"}
@@ -75,10 +75,10 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">Smart TVs</span>
+              <span className="text-center text-xs font-medium">Smart TVs</span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-5">
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/ac-banner.png"}
@@ -88,12 +88,12 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">
+              <span className="text-center text-xs font-medium">
                 Air Conditioners
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-5">
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/printer-banner.png"}
@@ -103,7 +103,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">Printers</span>
+              <span className="text-center text-xs font-medium">Printers</span>
             </Link>
           </Marquee>
         </div>
