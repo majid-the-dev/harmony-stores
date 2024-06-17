@@ -29,7 +29,7 @@ export default function Home() {
       {/* <NewArrivals /> */}
 
       {/* Trending Products */}
-      <TrendingProducts />
+      {/* <TrendingProducts /> */}
 
       <BrandMarquee />
 
