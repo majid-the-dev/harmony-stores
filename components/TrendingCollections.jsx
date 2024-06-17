@@ -34,7 +34,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-medium">
+              <span className="text-center text-xs font-semibold">
                 Smartphones
               </span>
             </Link>
@@ -49,7 +49,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-medium">Tablets</span>
+              <span className="text-center text-xs font-semibold">Tablets</span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
@@ -62,7 +62,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-medium">Laptops</span>
+              <span className="text-center text-xs font-semibold">Laptops</span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
@@ -75,7 +75,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-medium">Smart TVs</span>
+              <span className="text-center text-xs font-semibold">Smart TVs</span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
@@ -88,7 +88,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-medium">
+              <span className="text-center text-xs font-semibold">
                 Air Conditioners
               </span>
             </Link>
@@ -103,7 +103,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-medium">Printers</span>
+              <span className="text-center text-xs font-semibold">Printers</span>
             </Link>
           </Marquee>
         </div>

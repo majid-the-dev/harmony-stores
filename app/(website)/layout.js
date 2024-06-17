@@ -33,7 +33,7 @@ export default async function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/assets/dark--logo.png'/>
       </head>
-      <body className={`${poppins.className} bg-gray-100`}>
+      <body className={`${poppins.className}`}>
         <AppProvider>
           <ToasterProvider />
           <div>
