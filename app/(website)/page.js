@@ -16,7 +16,7 @@ export default function Home() {
   const { session, status } = useSession();
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-12 md:gap-12">
      <SearchBox />
 
       {/* Hero */}

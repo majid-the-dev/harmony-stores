@@ -10,9 +10,11 @@ import { GrGamepad } from "react-icons/gr";
 const TrendingCollections = () => {
   return (
     <div className="w-full px-4 md:px-6">
-      <div className="bg-white border border-gray-200/80 rounded-lg md:px-10 pt-10 pb-14">
-        <h1 className="text-xl md:text-2xl text-center md:text-left font-semibold">Trending Collections</h1>
-        <div className="mt-12 overflow-hidden">
+      <h1 className="text-[18px] md:text-xl text-left font-bold uppercase">
+        Trending Collections
+      </h1>
+      <div className="py-12">
+        <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
             {/* <Link
               href={"/"}
@@ -23,13 +25,13 @@ const TrendingCollections = () => {
             </Link> */}
 
             <Link href={"/"} className="flex flex-col justify-center gap-5">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-6">
+              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/smartphone-banner.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
-                  className="rounded-lg"
+                  className="rounded-sm"
                 />
               </div>
               <span className="text-center text-sm font-medium">
@@ -38,52 +40,52 @@ const TrendingCollections = () => {
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-5">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-6">
+              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/tablet-banner.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
-                  className="rounded-lg"
+                  className="rounded-sm"
                 />
               </div>
               <span className="text-center text-sm font-medium">Tablets</span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-5">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-6">
+              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/laptop-banner.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
-                  className="rounded-lg"
+                  className="rounded-sm"
                 />
               </div>
               <span className="text-center text-sm font-medium">Laptops</span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-5">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-6">
+              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/tv-banner.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
-                  className="rounded-lg"
+                  className="rounded-sm"
                 />
               </div>
               <span className="text-center text-sm font-medium">Smart TVs</span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-5">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-6">
+              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/ac-banner.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
-                  className="rounded-lg"
+                  className="rounded-sm"
                 />
               </div>
               <span className="text-center text-sm font-medium">
@@ -92,18 +94,16 @@ const TrendingCollections = () => {
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-5">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-6">
+              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
                 <Image
                   src={"/assets/printer-banner.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
-                  className="rounded-lg"
+                  className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-sm font-medium">
-                Printers
-              </span>
+              <span className="text-center text-sm font-medium">Printers</span>
             </Link>
           </Marquee>
         </div>
