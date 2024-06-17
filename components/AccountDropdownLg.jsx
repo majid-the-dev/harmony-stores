@@ -22,8 +22,8 @@ const AccountDropdownLg = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center gap-2 font-medium outline-none">
-        <span className="gradient-bg text-white rounded-full text-[15px] md:text-lg p-1.5">
+      <DropdownMenuTrigger className="flex items-center gap-2 font-medium outline-none ml-1">
+        <span className="gradient-bg text-white rounded-full text-[13px] md:text-lg p-1.5">
           <GoPerson />
         </span>
       </DropdownMenuTrigger>

@@ -106,6 +106,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -178,7 +179,9 @@ const MobileNav = () => {
     <div>
       <Sheet>
         <SheetTrigger>
-          <HiMenuAlt2 className="block md:hidden text-xl mt-2" />
+          <button className="block md:hidden gradient-bg text-white text-md rounded p-1 outline-none">
+            <FiMenu />
+          </button>
         </SheetTrigger>
         <SheetContent side="left" className="bg-gray-100 border-none p-0">
           <Image src={'/assets/dark--logo.png'} alt="logo" height={140} width={140} />

@@ -63,9 +63,9 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-lg">
-      <div className="mx-auto flex items-center justify-between px-6 py-4">
+      <div className="mx-auto flex items-center justify-between px-4 md:px-6 py-0">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
             <MobileNav />
 
             <Link href={"/"}>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 height={180}
                 width={180}
                 alt="logo"
-                className="scale-90 md:scale-100 -ml-3 md:-ml-0"
+                className="scale-75 md:scale-100 -ml-3 md:-ml-0"
               />
             </Link>
           </div>
@@ -170,7 +170,7 @@ const Navbar = () => {
               <BiSearch className="text-gray-400 absolute top-1/2 left-5 transform -translate-y-1/2 mt-[2px]" />
             </form> */}
 
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-5 md:gap-6">
               {/* <Link href={"/"} className="relative">
                 <RiHeart3Line className="text-xl md:text-2xl" />
                 <span className="absolute -top-5 -right-3 gradient-bg text-white text-[10px] rounded-full px-1.5 py-0.5">
@@ -179,10 +179,10 @@ const Navbar = () => {
               </Link> */}
               {/* <SearchModal /> */}
               <button onClick={toggleSearchBox}>
-                <FiSearch className="text-xl md:text-[22px]" />
+                <FiSearch className="text-[18px] md:text-[22px]" />
               </button>
               <Link href={"/cart"} className="relative">
-                <HiOutlineShoppingBag className="text-xl md:text-2xl" />
+                <HiOutlineShoppingBag className="text-[18px] md:text-2xl" />
                 <span className="absolute -top-5 -right-3 gradient-bg text-white text-xs rounded-full px-1.5 py-0.5">
                   {cartProducts?.length}
                 </span>
@@ -192,7 +192,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={"/auth/sign-in"}
-                  className="gradient-bg text-white rounded-full text-xl p-1.5"
+                  className="gradient-bg text-white rounded-full text-[13px] md:text-lg p-1.5"
                 >
                   <GoPerson />
                 </Link>
