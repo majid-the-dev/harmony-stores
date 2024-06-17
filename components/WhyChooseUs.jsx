@@ -11,6 +11,7 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
+              className="scale-75 md:scale-100"
             />
             <h1 className="text-sm font-semibold mt-3">
               Fast and Reliable Delivery
@@ -25,6 +26,7 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
+              className="scale-75 md:scale-100"
             />
             <h1 className="text-sm font-semibold mt-3">
               Wide Product Selection
@@ -34,7 +36,13 @@ const WhyChooseUs = () => {
             </p>
           </div>
           <div className="col-span-1 flex flex-col items-center gap-1">
-            <Image src={"/assets/card.png"} alt="icon" width={60} height={60} />
+            <Image
+              src={"/assets/card.png"}
+              alt="icon"
+              width={60}
+              height={60}
+              className="scale-75 md:scale-100"
+            />
             <h1 className="text-sm font-semibold mt-3">
               Secure Payment Options
             </h1>
@@ -48,6 +56,7 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
+              className="scale-75 md:scale-100"
             />
             <h1 className="text-sm font-semibold mt-3">
               Dedicated Customer Support
