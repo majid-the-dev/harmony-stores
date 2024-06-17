@@ -139,7 +139,7 @@ const Page = () => {
               <TableBody className="text-xs">
                 {categories?.length > 0 &&
                   categories.map((category) => (
-                    <TableRow>
+                    <TableRow key={category.name}>
                       <TableCell className="font-medium">
                         {category.name}
                       </TableCell>

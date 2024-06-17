@@ -161,7 +161,7 @@ const Page = () => {
                   <TableBody className="text-xs">
                     {coupons?.length > 0 &&
                       coupons.map((coupon) => (
-                        <TableRow>
+                        <TableRow key={coupon.name}>
                           <TableCell className="flex flex-col items-start gap-1.5 font-medium max-w-[300px] truncate">
                             <p>{coupon.name}</p>
                             <p className={`${coupon.status === "enabled" ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'} rounded-lg px-3 py-1`} >{coupon.status}</p>

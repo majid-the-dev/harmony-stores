@@ -71,7 +71,7 @@ const Page = () => {
               <hr className="my-2.5" />
               <ul className="flex flex-col gap-3 mt-6">
                 {order?.products?.map((product) => (
-                  <li className="text-xs">
+                  <li key={order.title} className="text-xs">
                     {product.quantity} {product.title}
                   </li>
                 ))}

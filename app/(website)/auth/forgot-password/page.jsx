@@ -19,7 +19,7 @@ const formSchema = z.object({
   email: z.string().email(),
 });
 
-const page = () => {
+const Page = () => {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -71,4 +71,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

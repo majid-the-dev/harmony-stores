@@ -142,7 +142,7 @@ const Page = () => {
                 <TableBody className="text-xs">
                   {filteredProducts?.length > 0 &&
                     filteredProducts.map((product) => (
-                      <TableRow>
+                      <TableRow key={product.title}>
                         <TableCell className="flex items-start gap-1 font-medium max-w-[300px] truncate">
                           {product.images?.[0] && (
                             <img

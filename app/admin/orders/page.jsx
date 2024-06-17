@@ -110,7 +110,7 @@ const Page = () => {
                 <TableBody className="text-xs">
                   {filteredOrders?.length > 0 &&
                     filteredOrders.slice().reverse().map((order) => (
-                      <TableRow>
+                      <TableRow key={order.orderId}>
                         <TableCell className="whitespace-nowrap pr-14 md:pr-7">
                           {order.orderId}
                         </TableCell>
