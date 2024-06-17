@@ -10,7 +10,7 @@ import { GrGamepad } from "react-icons/gr";
 const TrendingCollections = () => {
   return (
     <div className="w-full px-4 md:px-6">
-      <h1 className="text-[18px] md:text-xl text-left font-bold uppercase">
+      <h1 className="text-[16px] md:text-xl text-left font-bold uppercase">
         Trending Collections
       </h1>
       <div className="mt-6 md:mt-8">
