@@ -59,7 +59,7 @@ const MobileSidebar = () => {
                 path === "/admin" ? "bg-gray-200" : ""
               }`}
             >
-              <SheetClose className="w-full flex items-center gap-2">
+              <SheetClose className="w-full flex items-center gap-2 outline-none">
                 <span className="text-[19px]">
                   <RxDashboard />
                 </span>

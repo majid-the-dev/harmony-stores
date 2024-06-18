@@ -16,7 +16,7 @@ const CustomInput = ({ control, name, label, placeholder }) => {
             <FormControl>
               <Input
                 placeholder={placeholder}
-                className="animation bg-white font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-gray-400 placeholder:font-medium"
+                className="animation bg-white font-medium px-3 py-5 focus:border focus:border-default placeholder:text-gray-400 placeholder:text-xs placeholder:font-medium"
                 type={name === 'password' ? 'password' : 'text'}
                 {...field}
               />

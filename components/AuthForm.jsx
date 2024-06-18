@@ -175,7 +175,7 @@ const AuthForm = ({ type }) => {
         </form>
       </Form>
 
-      <div className="flex justify-center gap-1 mt-10">
+      <div className="flex justify-center gap-1 mt-5">
         <p className="text-xs font-normal text-gray-500">
           {type === "sign-in"
             ? "Don't have an account?"

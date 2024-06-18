@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LiaAngleRightSolid } from "react-icons/lia";
-import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleRight, FaAnglesRight } from "react-icons/fa6";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -122,17 +122,17 @@ const Page = () => {
       {status === "loading" ? (
         <LoadingScreen />
       ) : (
-        <div className="px-6">
+        <div className="">
           {/* Breadcrumb */}
-          <div className="flex items-center gap-3 text-black text-xs py-12">
+          <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 px-4 md:px-6 py-4">
             <Link href={"/"} className="text-black font-medium">
               Home
             </Link>
-            <LiaAngleRightSolid />
+            <FaAnglesRight />
             <p className="text-gray-500">Profile</p>
           </div>
 
-          <div className="mt-2 mb-24">
+          <div className="py-16 md:py-24 px-4 md:px-6">
             <div className="grid grid-cols-4 gap-10">
               <div className="col-span-4 md:col-span-1">
                 <ProfileNavigation />

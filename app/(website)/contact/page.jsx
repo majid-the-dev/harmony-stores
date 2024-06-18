@@ -59,7 +59,7 @@ const Page = () => {
   return (
     <div>
 
-      <div className="bg-white flex items-center gap-3 text-xs border-b border-gray-200 px-4 md:px-6 py-5">
+      <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 px-4 md:px-6 py-4">
         <Link href={"/"} className="font-medium">
           Home
         </Link>
