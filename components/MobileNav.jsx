@@ -188,7 +188,7 @@ const MobileNav = () => {
             height={140}
             width={140}
           />
-          <div className="">
+          {/* <div className="">
             <nav className="flex flex-col items-start p-3">
               <Accordion type="single" collapsible className="w-full">
                 {categories.map((category) => (
@@ -198,7 +198,7 @@ const MobileNav = () => {
                 ))}
               </Accordion>
             </nav>
-          </div>
+          </div> */}
         </SheetContent>
       </Sheet>
     </div>
