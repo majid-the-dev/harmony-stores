@@ -22,6 +22,7 @@ import { useSession } from "next-auth/react";
 import { LoaderIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
+import { FaAnglesRight } from "react-icons/fa6";
 
 // Form validation schema
 const formSchema = z.object({
@@ -84,16 +85,16 @@ const Page = () => {
       {status === "loading" ? (
        <LoadingScreen />
       ) : (
-        <div className="px-6">
-          <div className="flex items-center gap-3 text-xs py-12">
+        <div className="">
+          <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 shadow px-4 md:px-6 py-4">
             <Link href={"/"} className="text-black font-medium">Home</Link>
-            <LiaAngleRightSolid />
+            <FaAnglesRight />
             <Link href={"/profile"} className="text-black font-medium">Profile</Link>
-            <LiaAngleRightSolid />
+            <FaAnglesRight />
             <p className="text-gray-400">Password Reset</p>
           </div>
 
-          <div className="mt-2 mb-24">
+          <div className="py-16 md:py-24 px-4 md:px-6">
             <div className="grid grid-cols-4 gap-10">
               <div className="col-span-4 md:col-span-1">
                 <ProfileNavigation />

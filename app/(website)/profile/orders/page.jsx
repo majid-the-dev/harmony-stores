@@ -18,6 +18,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import LoadingScreen from "@/components/LoadingScreen";
+import { FaAnglesRight } from "react-icons/fa6";
 
 const Page = () => {
   const router = useRouter();
@@ -64,20 +65,20 @@ const Page = () => {
       {status === "loading" || loading ? (
         <LoadingScreen />
       ) : (
-        <div className="px-6">
-          <div className="flex items-center gap-3 text-xs py-12">
+        <div>
+          <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 shadow px-4 md:px-6 py-4">
             <Link href={"/"} className="text-black font-medium">
               Home
             </Link>
-            <LiaAngleRightSolid />
+            <FaAnglesRight />
             <Link href={"/profile"} className="text-black font-medium">
               Profile
             </Link>
-            <LiaAngleRightSolid />
+            <FaAnglesRight />
             <p className="text-gray-400">Orders</p>
           </div>
 
-          <div className="mt-2 mb-24">
+          <div className="py-16 md:py-24 px-4 md:px-6">
             <div className="grid grid-cols-4 gap-10">
               <div className="col-span-4 md:col-span-1">
                 <ProfileNavigation />

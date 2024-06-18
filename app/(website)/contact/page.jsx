@@ -59,7 +59,7 @@ const Page = () => {
   return (
     <div>
 
-      <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 px-4 md:px-6 py-4">
+      <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 shadow px-4 md:px-6 py-4">
         <Link href={"/"} className="font-medium">
           Home
         </Link>
@@ -72,16 +72,16 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: mapHtml }}
       />
 
-      <div className="h-full grid grid-cols-3 gap-6 py-20 px-6">
+      <div className="h-full grid grid-cols-3 gap-6 pt-10 pb-10 md:pt-20 md:pb-20 px-4 md:px-6">
         <div className="h-full col-span-3 md:col-span-1">
-          <div className="bg-white border border-gray-200/80 rounded-lg px-10 pt-10 pb-14">
+          <div className="bg-white border border-gray-200/80 shadow px-4 md:px-10 pt-7 md:pt-10 pb-14">
             <div className="flex items-center gap-3">
               <p className="gradient-bg text-white text-lg font-semibold rounded-full p-2">
                 <BsTelephone />
               </p>
               <span className="text-[16px] font-semibold">Call Us</span>
             </div>
-            <p className="text-gray-500 text-xs leading-6 mt-4">
+            <p className="text-gray-500 text-xs leading-5 mt-4">
               You can reach us directly during our operating hours. If
               we miss your call please leave us a message and we will reach out
               to you within 1 business day.
@@ -95,7 +95,7 @@ const Page = () => {
               </p>
               <span className="text-[16px] font-semibold">Write To Us</span>
             </div>
-            <p className="text-gray-500 text-xs leading-6 mt-4">
+            <p className="text-gray-500 text-xs leading-5 mt-4">
               Fill out our form and we will contact you within 24 hours.
               <br />
               Email: info@harmonystores.ng
@@ -132,8 +132,8 @@ const Page = () => {
         </div>
 
         <div className="h-full col-span-3 md:col-span-2">
-          <div className="bg-white border border-gray-200/80 rounded-lg px-10 pt-10 pb-14">
-            <h1 className="text-xl font-semibold">Send us a Message</h1>
+          <div className="bg-white border border-gray-200/80 shadow px-4 md:px-10 pt-7 md:pt-10 pb-14">
+            <h1 className="text-[16px] md:text-xl font-bold">Send us a Message</h1>
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -148,7 +148,7 @@ const Page = () => {
                         <FormControl>
                           <Input
                             placeholder="Your Name"
-                            className="animation bg-gray-100 font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
+                            className="animation font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
                             {...field}
                           />
                         </FormControl>
@@ -165,7 +165,7 @@ const Page = () => {
                         <FormControl>
                           <Input
                             placeholder="Your Email"
-                            className="animation bg-gray-100 font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
+                            className="animation font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
                             {...field}
                           />
                         </FormControl>
@@ -182,7 +182,7 @@ const Page = () => {
                         <FormControl>
                           <Input
                             placeholder="Your Phone"
-                            className="animation bg-gray-100 font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
+                            className="animation font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
                             {...field}
                           />
                         </FormControl>
@@ -199,7 +199,7 @@ const Page = () => {
                       <FormControl>
                         <Textarea
                           placeholder="Your Message"
-                          className="animation min-h-52 bg-gray-100 font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
+                          className="animation min-h-52 font-semibold px-3 py-6 focus:border focus:border-default placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
                           {...field}
                         />
                       </FormControl>
@@ -208,9 +208,9 @@ const Page = () => {
                   )}
                 />
                 <div className="flex justify-end">
-                  <Button className="gradient-bg flex items-center gap-2 px-8 py-6 mt-4">
+                  <Button className="animation bg-black flex items-center gap-2 text-xs px-5 py-4 mt-4 hover:bg-black/80">
                     Send Message
-                    <LuSend />
+                    {/* <LuSend /> */}
                   </Button>
                 </div>
               </form>

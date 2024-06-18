@@ -4,7 +4,7 @@ import { FaAnglesRight } from "react-icons/fa6";
 const page = () => {
   return (
     <div>
-      <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 px-4 md:px-6 py-4">
+      <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 shadow px-4 md:px-6 py-4">
         <Link href={"/"} className="font-medium">
           Home
         </Link>
@@ -12,7 +12,7 @@ const page = () => {
         <p className="text-gray-500 font-light">About us</p>
       </div>
 
-      <div className="max-w-5xl mx-auto flex flex-col gap-10 py-24 px-4 md:px-6">
+      <div className="max-w-5xl mx-auto flex flex-col gap-10 pt-14 pb-24 md:py-24 px-4 md:px-6">
         <div>
           <div className="flex items-center gap-2">
             <div className="gradient-bg w-2 h-2"></div>
@@ -24,10 +24,7 @@ const page = () => {
             computers, mobile phones, gadgets, and much more. Established in
             2010 as a single gadget retail store, we have grown exponentially to
             become a trusted provider of sales and services to millions of happy
-            customers all over Nigeria. At Harmony Stores NG, our mission is to
-            offer the highest level of customer service and support both before
-            and after purchase. We believe that our customers deserve the best,
-            and we strive to meet and exceed their expectations every day.
+            customers all over Nigeria.
           </p>
         </div>
 
@@ -40,9 +37,7 @@ const page = () => {
             Our journey began in 2010, when we opened our first store with a
             simple goal: to bring cutting-edge technology to our local
             community. Since then, we have expanded our reach and now operate
-            multiple locations across Nigeria. Our growth is a testament to the
-            trust and loyalty our customers have placed in us, and we are
-            committed to continuing to earn that trust every day.
+            multiple locations across Nigeria.
           </p>
         </div>
 
@@ -56,9 +51,7 @@ const page = () => {
             smartphones, tablets, computers, and cameras from top brands.
             Whether you are a tech enthusiast looking for the newest gadgets or
             a professional seeking reliable equipment, we have something for
-            everyone. Our product selection is carefully curated to ensure that
-            we only offer items that meet our high standards of quality and
-            performance.
+            everyone.
           </p>
         </div>
 
