@@ -11,6 +11,7 @@ import { AppProvider } from "@/components/AppContext";
 import ScrollingText from "@/components/ScrollingText";
 import TopMarquee from "@/components/TopMarquee";
 import 'animate.css';
+import SearchBox from "@/components/SearchBox";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,6 +33,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel='icon' href='/assets/dark--logo.png'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body className={`${poppins.className}`}>
         <AppProvider>
@@ -41,6 +43,7 @@ export default async function RootLayout({ children }) {
             <div className="w-full h-1 gradient-bg"></div>
             <Navbar />
             <TopMarquee />
+            {/* <SearchBox /> */}
             {/* <ScrollingText /> */}
           </div>
           <main>{children}</main>

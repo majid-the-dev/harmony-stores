@@ -8,12 +8,12 @@ const SearchBox = () => {
   if (!searchBox) return null;
 
   return (
-    <form className="w-full relative animate__animated animate__slideInDown">
+    <form className="relative animate__animated animate__zoomIn mx-4 md:mx-6 mt-4">
       <input
-        className="w-full text-xs sm:text-sm font-medium border-b border-gray-200 px-11 py-6 md:py-8 outline-none placeholder:text-black placeholder:font-normal"
+        className="w-full text-xs font-medium border bg-gray-100 border-gray-200 rounded px-11 py-5 shadow outline-none placeholder:text-black placeholder:font-normal"
         placeholder="Search Harmony Stores Here..."
       />
-      <FiSearch className="absolute top-1/2 left-6 transform -translate-y-1/2 text-black text-[13px] md:text-sm" />
+      <FiSearch className="absolute top-1/2 left-6 transform -translate-y-1/2 text-black text-[12.5px]" />
     </form>
   );
 };

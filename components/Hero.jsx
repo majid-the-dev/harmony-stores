@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-wrap md:flex-nowrap gap-1 px-4 md:px-6 mt-4 md:mt-6">
+    <div className="animation flex flex-wrap md:flex-nowrap gap-1 px-4 md:px-6 mt-4 md:mt-6">
       <div className="w-full lg:w-2/3">
         <div className="relative w-full h-[180px] md:h-[380px]">
           <Image
