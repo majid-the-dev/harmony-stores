@@ -39,6 +39,7 @@ import { CartContext, SearchContext } from "./AppContext";
 import { usePathname } from "next/navigation";
 import SearchModal from "./SearchModal";
 import { FiSearch } from "react-icons/fi";
+import MobileSidebar from "./MobileSidebar";
 
 const Navbar = () => {
   const path = usePathname();
@@ -66,7 +67,9 @@ const Navbar = () => {
       <div className="mx-auto flex items-center justify-between px-4 md:px-6 py-0">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">
-            <MobileNav />
+            {/* <MobileNav /> */}
+
+            <MobileSidebar />
 
             <Link href={"/"}>
               <Image
