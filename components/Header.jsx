@@ -11,30 +11,11 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="bg-black mx-auto flex items-center justify-between px-6 py-4">
-      <div className="flex items-center gap-5">
-        <p className="text-white text-xs font-normal">For wholesale enquiries call +2348077286191</p>
-        {/* <Link
-          href={"/stores"}
-          className="gradient-bg text-white text-xs font-medium flex items-center gap-2 rounded-lg px-5 py-2.5"
-        >
-          <span className="mt-0.5">Store Locations</span>
-        </Link> */}
-        {/* <Link
-          href={"/"}
-          className="hidden text-white text-xs font-medium md:flex items-center gap-1.5"
-        >
-          <BsFillTelephoneFill />
-          <span className="mt-0.5">+234 8182012345</span>
-        </Link> */}
-        {/* <Link
-          href={"/"}
-          className="hidden text-white text-xs font-medium md:flex items-center gap-1.5"
-        >
-          <IoMail />
-          <span className="mt-0.5">harmonystoresonline@gmail.com</span>
-        </Link> */}
-      </div>
+    <div className="bg-black mx-auto flex items-center justify-center md:justify-between px-6 py-4">
+
+      <p className="text-white text-xs font-medium">
+        For wholesale enquiries call +2348077286191
+      </p>
 
       <div className="hidden md:flex items-center gap-6 text-white text-sm">
         <Link href={"/"}>

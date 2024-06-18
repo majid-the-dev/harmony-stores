@@ -159,9 +159,9 @@ const Navbar = () => {
         <div className="">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-5 md:gap-6">
-              <button onClick={toggleSearchBox}>
+              <Link href={'/'}>
                 <FiSearch className="text-[18px] md:text-[22px]" />
-              </button>
+              </Link>
               <Link href={"/cart"} className="relative">
                 <HiOutlineShoppingBag className="text-[18px] md:text-2xl" />
                 <span className="absolute -top-5 -right-3 gradient-bg text-white text-xs rounded-full px-1.5 py-0.5">
