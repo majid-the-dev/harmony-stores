@@ -71,7 +71,7 @@ const Page = () => {
           <div className="h-full w-full grid grid-cols-3 gap-4">
             <div className="col-span-3 md:col-span-1">
               <div className="flex md:flex-col gap-4 w-full overflow-x-scroll md:overflow-y-scroll md:h-full">
-                {product.images.map((image, index) => (
+                {product?.images?.map((image, index) => (
                   <div
                     key={index}
                     className="relative w-40 md:w-full h-40 bg-gray-50 border border-gray-200 rounded-2xl cursor-pointer overflow-hidden"

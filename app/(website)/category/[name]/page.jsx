@@ -206,7 +206,7 @@ const Page = () => {
         <LoadingScreen />
       ) : (
         <div className="">
-          <div className="bg-white flex items-center gap-3 text-xs border-b border-gray-200 px-4 md:px-6 py-5">
+          <div className="bg-white flex items-center gap-3 text-xs border-b border-gray-200 shadow px-4 md:px-6 py-5">
             <Link href={"/"} className="text-black font-medium">
               Home
             </Link>
@@ -381,11 +381,11 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="col-span-4 lg:col-span-3 relative pb-28">
+            <div className="col-span-4 lg:col-span-3 relative pb-36 min-h-screen">
               <div className="block lg:hidden">
                 <Sheet className="block md:hidden">
                   <SheetTrigger>
-                    <button className="flex items-center gap-3 bg-white border border-gray-100 text-xs font-medium px-5 py-3 mb-6">
+                    <button className="flex items-center gap-3 bg-gray-100 border border-gray-200 text-xs font-medium px-5 py-3 mb-6">
                       <BsSliders className="text-[16px]" />
                       Filters
                     </button>

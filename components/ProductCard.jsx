@@ -26,7 +26,7 @@ const ProductCard = ({ product, link }) => {
   return (
     <Link href={link} className="group w-full max-w-56">
       {/* Fixed width for the card */}
-      <div className="relative bg-white border border-gray-100 p-7">
+      <div className="relative bg-white border border-gray-200 shadow p-7">
         <div className="relative h-36 md:h-40 mx-auto">
           {" "}
           {/* Adjusted dimensions for image container */}
@@ -62,20 +62,20 @@ const ProductCard = ({ product, link }) => {
         </button>
       </div>
       <div className="flex flex-col items-center mt-6">
-        <p className="text-sm text-center font-semibold">
+        <p className="text-xs md:text-sm text-center font-semibold group-hover:underline underline-offset-1">
           <span className="line-clamp-2">{product?.title}</span>
         </p>
         {product?.discount ? (
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mt-2">
-            <p className="text-red-600 text-sm font-semibold">
+            <p className="text-red-600 text-xs md:text-sm font-semibold">
               &#8358; {formatPrice(product?.discount)}
             </p>
-            <p className="text-gray-400/80 text-xs font-medium line-through">
+            <p className="text-gray-400/80 text-xs md:text-sm font-medium line-through">
               &#8358; {formatPrice(product?.price)}
             </p>
           </div>
         ) : (
-          <p className="text-red-600 text-sm font-semibold mt-2">
+          <p className="text-red-600 text-xs md:text-sm font-semibold mt-2">
             &#8358; {formatPrice(product?.price)}
           </p>
         )}
