@@ -7,47 +7,56 @@ import { FaFacebookF } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsThreads } from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io";
+import { BsFillThreadsFill } from "react-icons/bs";
 import Image from "next/image";
 
 const Header = () => {
   return (
     <div className="bg-black mx-auto flex items-center justify-center md:justify-between px-6 py-4">
-
       <p className="text-white text-xs font-medium">
         For wholesale enquiries call +2348077286191
       </p>
 
       <div className="hidden md:flex items-center gap-6 text-white text-sm">
-        <Link href={"/"}>
+        <Link target="_blank" href={"https://wa.me/+2348077286191/"}>
           <IoLogoWhatsapp className="text-white text-[17px]" />
-          {/* <Image
-            src={"/assets/whatsapp-logo.png"}
-            alt="logo"
-            width={27}
-            height={27}
-          /> */}
         </Link>
-        <Link href={"/"}>
+        <Link
+          target="_blank"
+          href={"https://www.instagram.com/harmonystoresng"}
+        >
           <PiInstagramLogoFill className="text-white text-[17px]" />
-          {/* <Image
-            src={"/assets/ig-logo.png"}
-            alt="logo"
-            width={37}
-            height={37}
-          /> */}
         </Link>
-        <Link href={"/"}>
+        {/* <Link href={"/"}>
           <FaFacebookF className="text-white text-[14px]" />
-          {/* <Image
-            src={"/assets/fb-logo.png"}
-            alt="logo"
-            width={22}
-            height={22}
-          /> */}
-        </Link>
-        <Link href={"/"}>
+        </Link> */}
+        <Link
+          target="_blank"
+          href={
+            "https://twitter.com/harmonystoresng?s=21&t=A8E8YgrlNKyOQuOZQaYBjA"
+          }
+        >
           <BsTwitterX className="text-white text-[13px]" />
-          {/* <Image src={"/assets/x-logo.png"} alt="logo" width={29} height={29} /> */}
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.tiktok.com/@harmonygroupng?is_from_webapp=1&sender_device=pc"}
+        >
+          <FaTiktok className="text-white text-[13px]" />
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.youtube.com/@HarmonyGroupTV"}
+        >
+          <IoLogoYoutube className="text-white text-[13px]" />
+        </Link>
+        <Link
+          target="_blank"
+          href={"https://www.threads.net/@harmonystoresng"}
+        >
+          <BsFillThreadsFill className="text-white text-[13px]" />
         </Link>
       </div>
     </div>

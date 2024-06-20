@@ -66,7 +66,7 @@ const BrandMarquee = () => {
                 />
               </div>
             </Link>
-            <Link href={"/"}>
+            {/* <Link href={"/"}>
               <div className="relative h-[68px] md:h-[100px] w-[68px] md:w-[100px] rounded-lg mx-7 md:mx-12">
                 <Image
                   src={"/assets/huawei-logo.png"}
@@ -76,7 +76,7 @@ const BrandMarquee = () => {
                   className="rounded-lg"
                 />
               </div>
-            </Link>
+            </Link> */}
             <Link href={"/"}>
               <div className="relative h-[80px] md:h-[140px] w-[80px] md:w-[140px] rounded-lg mx-7 md:mx-12">
                 <Image
@@ -122,9 +122,20 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[90px] md:h-[150px] w-[90px] md:w-[150px] rounded-lg mx-12">
+              <div className="relative h-[120px] md:h-[180px] w-[120px] md:w-[180px] rounded-lg mx-12">
                 <Image
-                  src={"/assets/hisense-logo.png"}
+                  src={"/assets/transcend-logo.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/logitech-logo.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="contain"

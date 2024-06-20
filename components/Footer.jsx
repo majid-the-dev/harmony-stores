@@ -140,32 +140,48 @@ const Footer = () => {
               Socials
             </h1>
             <div className="flex flex-col gap-7 mt-8">
+              <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="animation text-white/80 text-xs hover:translate-x-2">
+                WhatsApp
+              </Link>
               <Link
-                href={"/"}
+                target="_blank"
+                href={"https://www.instagram.com/harmonystoresng"}
                 className="animation text-white/80 text-xs hover:translate-x-2"
               >
                 Instagram
               </Link>
-              <Link
+              {/* <Link
                 href={"/"}
                 className="animation text-white/80 text-xs hover:translate-x-2"
               >
                 Facebook
-              </Link>
+              </Link> */}
               <Link
-                href={"/"}
+                target="_blank"
+                href={
+                  "https://twitter.com/harmonystoresng?s=21&t=A8E8YgrlNKyOQuOZQaYBjA"
+                }
                 className="animation text-white/80 text-xs hover:translate-x-2"
               >
-                Twitter
+                X (formerly twitter)
               </Link>
               <Link
-                href={"/"}
-                className="animation text-white/80 text-xs hover:translate-x-22"
+                target="_blank"
+                href={"https://www.tiktok.com/@harmonygroupng?is_from_webapp=1&sender_device=pc"}
+                className="animation text-white/80 text-xs hover:translate-x-2"
               >
                 TikTok
               </Link>
               <Link
-                href={"/"}
+                target="_blank"
+                href={"https://www.youtube.com/@HarmonyGroupTV"}
+                className="animation text-white/80 text-xs hover:translate-x-2"
+              >
+                YouTube
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://www.threads.net/@harmonystoresng"}
                 className="animation text-white/80 text-xs hover:translate-x-2"
               >
                 Threads
@@ -201,8 +217,8 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto max-w-7xl mt-20 py-12 border-t-[0.2px] border-gray-100/40">
-        <p className="text-white/80 text-xs text-center leading-5">
-          Copyright &copy; {date.getFullYear()} Harmony Group. <br /> All rights
+        <p className="text-white/80 text-xs text-center leading-8">
+          Copyright &copy; {date.getFullYear()} Harmony Group NG. <br /> All rights
           reserved.
         </p>
       </div>
