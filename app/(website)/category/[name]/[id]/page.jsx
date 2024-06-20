@@ -188,7 +188,7 @@ const Page = () => {
               Check pickup locations here
             </Link>
           </div>
-          <p className="bg-gray-100 px-4 py-2 mt-6 text-[13px] inline-block leading-6">
+          <p className="bg-gray-100 px-4 py-2 mt-6 text-xs inline-block leading-6">
             <span className="font-semibold">Same Day Delivery:</span> Available
             within Lagos.
             <br />
@@ -218,7 +218,7 @@ const Page = () => {
               />
             </Link>
           </div> */}
-          <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="bg-orange-100 text-orange-600 text-[13px] font-medium inline-flex items-center gap-2 rounded-full px-5 py-3"><BiSolidMessageRounded className="text-[22px]" /> Have any inquiry? <span className="underline">Chat with us</span></Link>
+          <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="bg-orange-100 text-orange-600 text-xs font-medium inline-flex items-center gap-2 rounded-full px-5 py-2"><BiSolidMessageRounded className="text-[17px]" /> Have any inquiry? <span className="underline">Chat with us</span></Link>
           {/* <div className="inline-block bg-gray-50 border border-gray-200 rounded-lg mt-10">
             <div className="flex items-center gap-4 border-b border-gray-200 p-5">
               <Image
