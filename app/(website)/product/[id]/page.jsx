@@ -75,7 +75,7 @@ const Page = () => {
                 {product?.images?.map((image, index) => (
                   <div
                     key={index}
-                    className="relative w-40 md:w-full h-40 bg-gray-50 border border-gray-200 cursor-pointer overflow-hidden"
+                    className="relative w-32 md:w-full h-32 cursor-pointer overflow-hidden"
                     onClick={() => setImageDisplay(image)}
                   >
                     <Image
@@ -91,7 +91,7 @@ const Page = () => {
               </div>
             </div>
             <div className="col-span-3 md:col-span-2 -order-1 md:order-1">
-              <div className="relative h-72 md:h-full w-full bg-gray-50 border border-gray-200 overflow-hidden">
+              <div className="relative h-72 md:h-full w-full overflow-hidden">
                 <Image
                   src={imageDisplay}
                   alt="product"
