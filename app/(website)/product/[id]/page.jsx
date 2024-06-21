@@ -21,7 +21,7 @@ import {
 import { CartContext } from "@/components/AppContext";
 import { BiSolidMessageRounded } from "react-icons/bi";
 
-const page = () => {
+const Page = () => {
   const { id } = useParams();
   const { addToCart } = useContext(CartContext);
 
@@ -244,4 +244,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
