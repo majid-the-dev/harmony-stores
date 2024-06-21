@@ -37,7 +37,7 @@ const Accessories = () => {
         <h1 className="text-[14px] md:text-xl text-left font-bold uppercase">
           Accessories
         </h1>
-        <hr className="border-[0.5px] border-gray-200 w-full" />
+        <hr className="border-[0.5px] border-gray-300/80 w-full" />
       </div>
       <div className="mt-6 md:mt-8">
         {loading ? (

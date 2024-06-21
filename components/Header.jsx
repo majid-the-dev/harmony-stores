@@ -15,7 +15,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <div className="bg-black mx-auto flex items-center justify-center md:justify-between px-6 py-4">
-      <p className="text-white text-xs font-medium">
+      <p className="text-default text-xs font-semibold">
         For wholesale enquiries call +2348077286191
       </p>
 
