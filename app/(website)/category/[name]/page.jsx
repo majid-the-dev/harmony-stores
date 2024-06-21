@@ -551,9 +551,7 @@ const Page = () => {
                   <ProductCard
                     key={product._id}
                     product={product}
-                    link={`/category/${encodeURIComponent(
-                      category.name.replace(/ /g, "-")
-                    )}/${product._id}`}
+                    link={`/product/${product._id}`}
                   />
                 ))}
               </div>

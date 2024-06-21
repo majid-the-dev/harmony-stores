@@ -11,12 +11,16 @@ import NewArrivals from "@/components/NewArrivals";
 import BrandMarquee from "@/components/BrandMarquee";
 import { FiSearch } from "react-icons/fi";
 import SearchBox from "@/components/SearchBox";
+import Smartphones from "@/components/Smartphones";
+import Laptops from "@/components/Laptops";
+import Accessories from "@/components/Accessories";
+import Link from "next/link";
 
 export default function Home() {
   const { session, status } = useSession();
 
   return (
-    <div className="flex flex-col gap-10 md:gap-16">
+    <div className="relative flex flex-col gap-10 md:gap-16">
       
      <SearchBox />
 
@@ -25,6 +29,15 @@ export default function Home() {
 
       {/* Trending Collections */}
       <TrendingCollections />
+
+      {/* Smartphones */}
+      <Smartphones />
+
+      {/* Laptops */}
+      <Laptops />
+
+      {/* Accessories */}
+      <Accessories />
 
       {/* New Arrivals */}
       {/* <NewArrivals /> */}

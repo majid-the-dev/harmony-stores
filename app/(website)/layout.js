@@ -12,6 +12,8 @@ import ScrollingText from "@/components/ScrollingText";
 import TopMarquee from "@/components/TopMarquee";
 import 'animate.css';
 import SearchBox from "@/components/SearchBox";
+import Link from "next/link";
+import Image from "next/image";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,7 +37,7 @@ export default async function RootLayout({ children }) {
         <link rel='icon' href='/assets/dark--logo.png'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
-      <body className={`${poppins.className}`}>
+      <body className={`${poppins.className} relative`}>
         <AppProvider>
           <ToasterProvider />
           <div>
@@ -51,6 +53,9 @@ export default async function RootLayout({ children }) {
             <Footer />
           </div>
         </AppProvider>
+        <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="fixed bottom-8 right-4 z-50">
+          <Image src={'/assets/whatsapp-icon.png'} width={60} height={60} alt="icon" />
+        </Link>
       </body>
     </html>
   );

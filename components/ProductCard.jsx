@@ -26,7 +26,7 @@ const ProductCard = ({ product, link }) => {
   return (
     <Link href={link} className="group w-full max-w-56">
       {/* Fixed width for the card */}
-      <div className="relative bg-white border border-gray-200 shadow p-7">
+      <div className="relative bg-white p-7">
         <div className="relative h-36 md:h-40 mx-auto">
           {" "}
           {/* Adjusted dimensions for image container */}
@@ -53,7 +53,7 @@ const ProductCard = ({ product, link }) => {
           <GoHeartFill className="text-gray-300 text-xl hover:text-default" />
         </button> */}
         <button
-          disabled={product.availability === "Out of Stock"}
+          disabled={product?.availability === "Out of Stock"}
           onClick={handleCart}
           className="absolute bottom-0 left-0 w-full mx-auto flex items-center justify-center gap-2 gradient-bg text-white text-xs font-semibold py-2.5 opacity-0 group-hover:opacity-100 transition-opacity disabled:group-hover:opacity-0 disabled:cursor-not-allowed"
         >
@@ -79,7 +79,7 @@ const ProductCard = ({ product, link }) => {
             &#8358; {formatPrice(product?.price)}
           </p>
         )}
-        {product.availability === "Out of Stock" && (
+        {product?.availability === "Out of Stock" && (
           <p className="text-xs text-red-600 font-semibold mt-2 ">
             {product.availability}
           </p>

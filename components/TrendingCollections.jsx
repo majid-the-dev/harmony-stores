@@ -10,9 +10,10 @@ import { GrGamepad } from "react-icons/gr";
 const TrendingCollections = () => {
   return (
     <div className="w-full px-4 md:px-6">
-      <h1 className="text-[16px] md:text-xl text-left font-bold uppercase">
-        Trending Collections
-      </h1>
+      <div className="flex items-center gap-5">
+            <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">Trending Collections</h1>
+            <hr className="border-[0.5px] border-gray-200 w-full" />
+        </div>
       <div className="mt-6 md:mt-8">
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
