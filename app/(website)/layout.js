@@ -53,8 +53,9 @@ export default async function RootLayout({ children }) {
             <Footer />
           </div>
         </AppProvider>
-        <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="fixed bottom-8 right-4 z-50">
+        <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="md:bg-white fixed flex items-center gap-1 bottom-8 right-4 z-50 rounded-full md:px-4 md:py-2">
           <Image src={'/assets/whatsapp-icon.png'} width={60} height={60} alt="icon" />
+          <span className="text-xs font-semibold hidden md:block">How can we help you?</span>
         </Link>
       </body>
     </html>
