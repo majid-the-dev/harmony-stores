@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col gap-10 md:gap-16">
       
-     <SearchBox />
+     {/* <SearchBox /> */}
 
       {/* Hero */}
       <Hero />

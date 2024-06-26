@@ -231,8 +231,9 @@ const Page = () => {
             {category?.name}
           </h1> */}
           <div className="grid grid-cols-4 gap-16 md:gap-10 pt-10 pb-14 px-4 md:px-6">
+
             <div className="col-span-4 lg:col-span-1 order-1 lg:-order-1 hidden lg:block">
-              <div className="">
+              <div>
                 <div className="bg-white text-sm font-medium border-b border-gray-200 px-3 py-3">
                   SORT BY
                 </div>

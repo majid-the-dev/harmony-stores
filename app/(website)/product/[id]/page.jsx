@@ -203,7 +203,7 @@ const Page = () => {
                       : "bg-white hover:bg-white"
                   }
                 >
-                  <TableCell className="text-[13px] font-semibold capitalize">
+                  <TableCell className="text-[13px] font-semibold uppercase">
                     {property.name}
                   </TableCell>
                   <TableCell className="text-[13px]">

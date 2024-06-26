@@ -3,14 +3,6 @@
 import { useContext, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaRegHeart } from "react-icons/fa6";
-import { MdOutlineShoppingCart } from "react-icons/md";
-import { IoPersonCircleOutline } from "react-icons/io5";
-import { FaAngleDown } from "react-icons/fa6";
-import { BiSearch } from "react-icons/bi";
-import { IoMenu } from "react-icons/io5";
-import MobileNav from "./MobileNav";
-import AccountDropdown from "./AccountDropdown";
 import AccountDropdownLg from "./AccountDropdownLg";
 import { signOut, useSession } from "next-auth/react";
 import {
@@ -28,28 +20,22 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import CategoryDropdown from "./CategoryDropdown";
 import CategoryItem from "./CategoryItem";
 import { MdArrowDropDown } from "react-icons/md";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import { RiHeart3Line } from "react-icons/ri";
 import { GoPerson } from "react-icons/go";
-import { IoSearch } from "react-icons/io5";
 import { CartContext, SearchContext } from "./AppContext";
 import { usePathname } from "next/navigation";
-import SearchModal from "./SearchModal";
 import { FiSearch } from "react-icons/fi";
 import MobileSidebar from "./MobileSidebar";
+import SearchBox from "./SearchBox";
 
 const Navbar = () => {
+
   const path = usePathname();
-
   const { data: session, status, update } = useSession();
-
   const [categories, setCategories] = useState([]);
-
-  const { toggleSearchBox } = useContext(SearchContext);
-
+  const { toggleSearchBox, searchBox } = useContext(SearchContext);
   const { cartProducts } = useContext(CartContext);
 
   useEffect(() => {
@@ -69,7 +55,7 @@ const Navbar = () => {
           <div className="flex items-center gap-1">
             {/* <MobileNav /> */}
 
-            <MobileSidebar />
+            <MobileSidebar categories={categories} />
 
             <Link href={"/"}>
               <Image
@@ -162,9 +148,9 @@ const Navbar = () => {
         <div className="">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-5 md:gap-6">
-              <Link href={'/'}>
+              <button onClick={toggleSearchBox}>
                 <FiSearch className="text-[18px] md:text-[22px]" />
-              </Link>
+              </button>
               <Link href={"/cart"} className="relative">
                 <HiOutlineShoppingBag className="text-[18px] md:text-2xl" />
                 <span className="absolute -top-5 -right-3 gradient-bg text-white text-xs rounded-full px-1.5 py-0.5">

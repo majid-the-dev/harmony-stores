@@ -74,6 +74,7 @@ export const SearchContext = createContext({});
 export const AppProvider = ({ children }) => {
   const [cartProducts, setCartProducts] = useState([]);
   const [searchBox, setSearchBox] = useState(false);
+  const [searchBoxAnimation, setSearchBoxAnimation] = useState("");
   const ls = typeof window !== "undefined" ? window.localStorage : null;
 
   useEffect(() => {
@@ -135,7 +136,14 @@ export const AppProvider = ({ children }) => {
   };
 
   const toggleSearchBox = () => {
-    setSearchBox((prev) => !prev);
+    setSearchBox((prev) => {
+      if (prev) {
+        setSearchBoxAnimation("animate__fadeInUp");
+      } else {
+        setSearchBoxAnimation("animate__fadeInDown");
+      }
+      return !prev;
+    });
   };
 
   return (
@@ -149,7 +157,7 @@ export const AppProvider = ({ children }) => {
           clearCart,
         }}
       >
-        <SearchContext.Provider value={{ searchBox, toggleSearchBox }}>
+        <SearchContext.Provider value={{ searchBox, toggleSearchBox, searchBoxAnimation }}>
           {children}
         </SearchContext.Provider>
       </CartContext.Provider>
