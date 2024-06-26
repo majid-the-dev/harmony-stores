@@ -42,7 +42,7 @@ export default async function RootLayout({ children }) {
           <ToasterProvider />
           <div>
             {/* <Header /> */}
-            <div className="w-full h-1 gradient-bg"></div>
+            {/* <div className="w-full h-1 gradient-bg"></div> */}
             <Navbar />
             <TopMarquee />
             <SearchBox />

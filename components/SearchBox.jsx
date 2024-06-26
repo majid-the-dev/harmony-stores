@@ -67,18 +67,18 @@ const SearchBox = () => {
       {searchBox && (
         <div className={`${searchBoxAnimation} relative mx-4 md:mx-6 animate__animated z-20`}>
           <form
-            className="h-full flex items-center mt-6"
+            className="h-full flex items-center mt-6 shadow-sm"
             onSubmit={handleSearchSubmit}
           >
             <input
-              className="w-full text-xs font-semibold bg-gray-100 border-t border-b border-l border-gray-200 px-3 md:px-5 py-3 md:py-4 outline-none placeholder:text-[11px] md:placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
+              className="w-full text-xs font-semibold bg-gray-100 px-3 md:px-5 py-3 md:py-4 outline-none rounded-none placeholder:text-[11px] md:placeholder:text-xs placeholder:text-gray-500 placeholder:font-medium"
               placeholder="Search for products here..."
               value={searchTerm}
               onChange={handleSearchChange}
             />
             <button
               type="submit"
-              className="flex items-center justify-center bg-black text-white px-5 py-3 md:py-4 outline-none"
+              className="flex items-center justify-center bg-black text-white px-4 py-3 md:py-4 outline-none"
             >
               <FiSearch />
             </button>

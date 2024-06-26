@@ -30,7 +30,7 @@ const generateOrderId = () => {
 };
 
 const Page = () => {
-  const publicKey = "pk_test_5a0da603103a23a0d526fe61dd0847e11df22b37";
+  const publicKey = "pk_live_6f45e5455a5f087d4dcd5c15dd07fe5c7de365dd";
 
   const router = useRouter();
   const { data: session, status } = useSession();
@@ -222,7 +222,7 @@ const Page = () => {
   const totalAfterDiscount = totalPrice - discountValue;
   const grandTotal = totalAfterDiscount + deliveryFee;
 
-  const handleConfirmOrder = async () => {
+  const handleConfirmOrder = async (reference) => {
     // if (!validateForm()) return;
 
     const orderId = generateOrderId();
@@ -259,6 +259,26 @@ const Page = () => {
     console.log(orderData);
 
     try {
+      const verificationResponse = await fetch("/api/transaction", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ reference }), // replace with your transaction reference variable
+      });
+
+      if (!verificationResponse.ok) {
+        toast.error("Transaction verification failed!");
+        return;
+      }
+
+      const verificationData = await verificationResponse.json();
+
+      if (verificationData.status !== "success") {
+        toast.error("Transaction verification failed!");
+        return;
+      }
+
       const response = await fetch("/api/orders", {
         method: "POST",
         headers: {
@@ -292,13 +312,11 @@ const Page = () => {
     },
     publicKey,
     text: "Confirm Order",
-    onSuccess: () => handleConfirmOrder(),
+    onSuccess: (reference) => handleConfirmOrder(reference),
   };
 
   if (status === "loading") {
-    return (
-      <LoadingScreen />
-    );
+    return <LoadingScreen />;
   }
 
   if (status === "unauthenticated") {
