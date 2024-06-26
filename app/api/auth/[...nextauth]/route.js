@@ -7,7 +7,7 @@
 // import { MongoDBAdapter } from "@auth/mongodb-adapter";
 
 // // Establish a single database connection when the server starts
-// mongoose.connect(process.env.MONGODBURI);
+// mongoose.connect(process.env.MONGODB_URI);
 
 // export const authOptions = {
 //   secret: process.env.NEXTAUTH_SECRET,
@@ -66,7 +66,7 @@
 // import { MongoDBAdapter } from "@auth/mongodb-adapter";
 
 // // Establish a single database connection when the server starts
-// mongoose.connect(process.env.MONGODBURI);
+// mongoose.connect(process.env.MONGODB_URI);
 
 // export const authOptions = {
 //   secret: process.env.NEXTAUTH_SECRET,
@@ -158,7 +158,7 @@ import clientPromise from "@/lib/mongoConnect";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 
 // Establish a single database connection when the server starts
-mongoose.connect(process.env.MONGODBURI);
+mongoose.connect(process.env.MONGODB_URI);
 
 export const authOptions = {
   secret: process.env.NEXTAUTH_SECRET,

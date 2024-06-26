@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 
 export const POST = async (req) => {
     const body = await req.json();
-    mongoose.connect(process.env.MONGODBURI);
+    mongoose.connect(process.env.MONGODB_URI);
     const password = body.password;
 
     const notHashedPassword = password;
