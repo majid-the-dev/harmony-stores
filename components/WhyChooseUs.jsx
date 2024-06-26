@@ -3,7 +3,7 @@ import Image from "next/image";
 const WhyChooseUs = () => {
   return (
     <div className="w-full px-6 pb-10">
-      <div className="bg-gray-100 border border-gray-200/80 rounded-lg px-10 pt-10 pb-14">
+      <div className="border border-gray-200/80 shadow px-10 pt-10 pb-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-11">
           <div className="col-span-1 flex flex-col items-center gap-1">
             <Image
@@ -11,12 +11,12 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
-              className="scale-75 md:scale-100"
+              className="scale-[65%] md:scale-100"
             />
-            <h1 className="text-sm font-semibold mt-3">
+            <h1 className="text-[13px] font-semibold mt-3">
               Fast and Reliable Delivery
             </h1>
-            <p className="text-gray-500 text-[12px] text-center">
+            <p className="text-gray-500 text-[11px] text-center">
               Enjoy fast and reliable delivery to your doorstep
             </p>
           </div>
@@ -26,12 +26,12 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
-              className="scale-75 md:scale-100"
+              className="scale-[65%] md:scale-100"
             />
-            <h1 className="text-sm font-semibold mt-3">
+            <h1 className="text-[13px] font-semibold mt-3">
               Wide Product Selection
             </h1>
-            <p className="text-gray-500 text-[12px] text-center">
+            <p className="text-gray-500 text-[11px] text-center">
               Explore all products across various categories
             </p>
           </div>
@@ -41,12 +41,12 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
-              className="scale-75 md:scale-100"
+              className="scale-[65%] md:scale-100"
             />
-            <h1 className="text-sm font-semibold mt-3">
+            <h1 className="text-[13px] font-semibold mt-3">
               Secure Payment Options
             </h1>
-            <p className="text-gray-500 text-[12px] text-center">
+            <p className="text-gray-500 text-[11px] text-center">
               Multiple safe and convenient payment options
             </p>
           </div>
@@ -56,12 +56,12 @@ const WhyChooseUs = () => {
               alt="icon"
               width={60}
               height={60}
-              className="scale-75 md:scale-100"
+              className="scale-[65%] md:scale-100"
             />
-            <h1 className="text-sm font-semibold mt-3">
+            <h1 className="text-[13px] font-semibold mt-3">
               Dedicated Customer Support
             </h1>
-            <p className="text-gray-500 text-[12px] text-center">
+            <p className="text-gray-500 text-[11px] text-center">
               Our dedicated team is available 24/7 to assist you
             </p>
           </div>

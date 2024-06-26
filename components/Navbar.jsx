@@ -52,7 +52,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-lg">
       <div className="mx-auto flex items-center justify-between px-4 md:px-6 py-0">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-1">
+          <div className="flex items-center">
             {/* <MobileNav /> */}
 
             <MobileSidebar categories={categories} />
@@ -63,7 +63,7 @@ const Navbar = () => {
                 height={180}
                 width={180}
                 alt="logo"
-                className="scale-75 md:scale-100 -ml-3 md:-ml-0"
+                className="scale-75 md:scale-100 -ml-4 md:-ml-0"
               />
             </Link>
           </div>

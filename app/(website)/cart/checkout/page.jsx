@@ -305,7 +305,7 @@ const Page = () => {
 
   const componentProps = {
     email: userEmail,
-    amount: parseInt(grandTotal),
+    amount: parseInt(grandTotal) * 100,
     metadata: {
       name: `${firstName} ${lastName}`,
       phone: phoneNumber,

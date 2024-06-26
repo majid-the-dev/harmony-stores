@@ -27,7 +27,7 @@ const ProductCard = ({ product, link }) => {
     <Link href={link} className="group w-full max-w-56">
       {/* Fixed width for the card */}
       <div className="relative bg-white p-7">
-        <div className="relative h-36 md:h-40 mx-auto">
+        <div className="relative h-24 md:h-28 mx-auto">
           {" "}
           {/* Adjusted dimensions for image container */}
           <Image
@@ -75,7 +75,7 @@ const ProductCard = ({ product, link }) => {
             </p>
           </div>
         ) : (
-          <p className="text-red-600 text-xs md:text-sm font-semibold mt-2">
+          <p className="text-red-600 text-xs md:text-[13px] font-semibold mt-2">
             &#8358; {formatPrice(product?.price)}
           </p>
         )}

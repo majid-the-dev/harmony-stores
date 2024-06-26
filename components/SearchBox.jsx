@@ -65,7 +65,7 @@ const SearchBox = () => {
   return (
     <>
       {searchBox && (
-        <div className={`${searchBoxAnimation} relative mx-4 md:mx-6 animate__animated z-20`}>
+        <div className={`${searchBoxAnimation} relative mx-4 md:mx-6 animate__animated z-20 mb-2`}>
           <form
             className="h-full flex items-center mt-6 shadow-sm"
             onSubmit={handleSearchSubmit}

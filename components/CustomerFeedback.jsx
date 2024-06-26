@@ -16,7 +16,7 @@ const CustomerFeedback = () => {
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
             <div className="w-full max-w-md flex-shrink-0 mx-8 py-2">
-              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white rounded-lg shadow-md px-6 md:px-8 py-8 md:py-12">
+              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white shadow px-6 md:px-8 py-8 md:py-12">
                 <Image
                   src={"/assets/quote.png"}
                   height={40}
@@ -37,7 +37,7 @@ const CustomerFeedback = () => {
             </div>
 
             <div className="w-full max-w-md flex-shrink-0 mx-8 py-2">
-              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white rounded-lg shadow-md px-6 md:px-8 py-8 md:py-12">
+              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white shadow px-6 md:px-8 py-8 md:py-12">
                 <Image
                   src={"/assets/quote.png"}
                   height={40}
@@ -57,7 +57,7 @@ const CustomerFeedback = () => {
             </div>
 
             <div className="w-full max-w-md flex-shrink-0 mx-8 py-2">
-              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white rounded-lg shadow-md px-6 md:px-8 py-8 md:py-12">
+              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white shadow px-6 md:px-8 py-8 md:py-12">
                 <Image
                   src={"/assets/quote.png"}
                   height={40}
@@ -77,7 +77,7 @@ const CustomerFeedback = () => {
             </div>
 
             <div className="w-full max-w-md flex-shrink-0 mx-8 py-2">
-              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white rounded-lg shadow-md px-6 md:px-8 py-8 md:py-12">
+              <div className="w-full h-full flex flex-col items-center justify-center gap-4 bg-white shadow px-6 md:px-8 py-8 md:py-12">
                 <Image
                   src={"/assets/quote.png"}
                   height={40}

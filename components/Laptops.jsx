@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import { LoaderIcon } from "lucide-react";
+import Link from "next/link";
+import { FaAnglesRight } from "react-icons/fa6";
 
 const Laptops = () => {
   const [loading, setLoading] = useState(true);
@@ -33,11 +35,15 @@ const Laptops = () => {
 
   return (
     <div className="w-full px-4 md:px-6">
-      <div className="flex items-center gap-5">
+      <div className="flex items-center justify-between gap-5">
         <h1 className="text-[14px] md:text-xl text-left font-bold uppercase">
           Laptops
         </h1>
-        <hr className="border-[0.5px] border-gray-300/80 w-full" />
+        {/* <hr className="border-[0.5px] border-gray-300/80 w-full" /> */}
+        <Link href={'/category/Laptops'} className="flex items-center gap-2 whitespace-nowrap text-orange-600 text-xs font-medium">
+          See All
+          <FaAnglesRight className="animate__animated animate__fadeInLeft animate__infinite animate__slower" />
+        </Link>
       </div>
       <div className="mt-6 md:mt-8">
         {loading ? (
