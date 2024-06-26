@@ -86,7 +86,7 @@ const SearchBox = () => {
           {filteredProducts.length > 0 && (
             <div className="absolute w-full flex flex-col bg-white border border-gray-200 pt-4 z-50">
               <p className="text-orange-600 text-xs font-semibold px-4 mb-4">
-                Showing results for "{searchTerm}"
+                Showing results for &quot;{searchTerm}&quot;
               </p>
               {filteredProducts.map((product) => (
                 <Link
