@@ -114,7 +114,7 @@ const Page = () => {
                           </div>
                           <div className="flex flex-col gap-3">
                             <p className="text-gray-400 text-[10px] font-semibold uppercase">{product.category.name}</p>
-                            <p className="text-md font-bold line-clamp-1">
+                            <p className="text-md font-bold line-clamp-2">
                               {product.title}
                             </p>
                             {product.discount && (
@@ -239,7 +239,7 @@ const Page = () => {
                 </div>
                 <Link
                     href={"/"}
-                    className="animation inline-flex items-center float-end gap-2 text-red-600 text-xs font-semibold mt-5 hover:bg-black/80"
+                    className="animation inline-flex items-center float-end gap-2 text-red-600 text-xs font-semibold mt-5"
                   >
                     <AiFillShop />
                     Return to Shop

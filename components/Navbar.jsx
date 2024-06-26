@@ -136,7 +136,7 @@ const Navbar = () => {
                 Categories
                 <MdArrowDropDown className="text-xl" />
               </MenubarTrigger>
-              <MenubarContent className="mt-[31px] p-4">
+              <MenubarContent className="mt-[26px] p-4 border-none rounded-none">
                 {categories?.map((category) => (
                   <CategoryItem key={category._id} category={category} />
                 ))}
