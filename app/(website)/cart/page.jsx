@@ -11,6 +11,7 @@ import { AiFillShop } from "react-icons/ai";
 import { IoBagCheckOutline } from "react-icons/io5";
 import { BsInfoCircle } from "react-icons/bs";
 import Link from "next/link";
+import { FaAnglesRight } from "react-icons/fa6";
 
 const Page = () => {
   const { cartProducts, removeCartProduct, clearCart } =
@@ -55,15 +56,23 @@ const Page = () => {
 
   return (
     <div>
+      <div className="bg-white flex items-center gap-3 text-[11px] md:text-xs border-b border-gray-200 shadow px-4 md:px-6 py-4">
+        <Link href={"/"} className="font-medium">
+          Home
+        </Link>
+        <FaAnglesRight className="font-medium" />
+        <p className="text-gray-500 font-light">cart</p>
+      </div>
+
       {cartProducts.length === 0 && (
-        <div className="px-16 py-40">
-          <div className="flex flex-col items-center justify-center">
+        <div className="px-16 h-[75vh]">
+          <div className="h-full flex flex-col items-center justify-center">
             {/* <BiSolidSad className="text-default text-4xl" /> */}
-            <Image src={'/assets/shopping-bag.png'} height={100} width={100} alt="icon" />
-            <p className="text-xl text-center font-semibold mt-5">
+            <Image src={'/assets/shopping-bag.png'} height={60} width={60} alt="icon" />
+            <p className="text-[17px] md:text-xl text-center font-semibold mt-5">
               Ooops! Shopping Bag is Empty
             </p>
-            <p className="text-xs text-gray-500 text-center font-light leading-5 mt-2">
+            <p className="text-xs text-gray-500 text-center font-light leading-4 mt-2">
               Before proceeding to checkout, you must add some products to your
               shopping bag!
             </p>
@@ -71,8 +80,9 @@ const Page = () => {
         </div>
       )}
       {cartProducts.length > 0 && (
-        <div className="px-6 py-14">
-          <h1 className="text-xl md:text-2xl font-semibold">Shopping Cart</h1>
+        <div className="px-4 md:px-6 pt-10 pb-20">
+
+          <h1 className="text-[17px] md:text-2xl font-bold">Shopping Cart</h1>
 
           <div className="mt-12">
             {anyOutOfStock && (
@@ -81,19 +91,19 @@ const Page = () => {
                 Some products in your cart are out of stock
               </p>
             )}
-            <div className="grid grid-cols-5 gap-8 mt-8">
+            <div className="grid grid-cols-5 gap-6">
               <div className="col-span-5 lg:col-span-3">
-                <div className="bg-white border border-gray-200 rounded-lg p-7">
+                <div className="border shadow border-gray-300/70 p-6">
                   <div className="flex flex-col">
                     {cartProducts.map((product, index) => (
                       <div
                         key={product._id}
-                        className={`flex flex-col md:flex-row justify-between gap-7 py-12 ${
-                          index !== cartProducts.length - 1 ? "border-b" : ""
+                        className={`flex flex-col md:flex-row justify-between gap-7 py-10 ${
+                          index !== cartProducts.length - 1 ? "border-b border-gray-300/60" : ""
                         }`}
                       >
-                        <div className="flex gap-3">
-                          <div className="relative w-20 h-20">
+                        <div className="flex items-center gap-10">
+                          <div className="relative w-36 h-36">
                             <Image
                               src={product.images[0]}
                               alt="product"
@@ -103,7 +113,8 @@ const Page = () => {
                             />
                           </div>
                           <div className="flex flex-col gap-3">
-                            <p className="text-sm font-semibold line-clamp-1">
+                            <p className="text-gray-400 text-[10px] font-semibold uppercase">{product.category.name}</p>
+                            <p className="text-md font-bold line-clamp-1">
                               {product.title}
                             </p>
                             {product.discount && (
@@ -122,7 +133,7 @@ const Page = () => {
                                 </p>
                               </div>
                             )}
-                            <p className="text-sm font-semibold">
+                            <p className="text-red-600 text-sm font-bold">
                               &#8358;{" "}
                               {formatPrice(
                                 product.discount
@@ -174,26 +185,26 @@ const Page = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between mt-4 lg:mt-6">
+                {/* <div className="flex items-center justify-between mt-4 lg:mt-6">
                   <Link
                     href={"/"}
-                    className="animation flex items-center gap-2 bg-black text-default text-xs font-medium rounded-lg px-5 py-3 mt-5 hover:bg-black/80"
+                    className="animation flex items-center gap-2 bg-black text-white text-xs font-medium px-5 py-3 mt-5 hover:bg-black/80"
                   >
                     <AiFillShop />
                     Return to Shop
                   </Link>
                   <button
                     onClick={() => clearCart()}
-                    className="animation flex items-center gap-2 bg-red-600 text-white text-xs font-medium rounded-lg px-5 py-3 mt-5 hover:bg-red-600/80"
+                    className="animation flex items-center gap-2 bg-red-600 text-white text-xs font-medium px-5 py-3 mt-5 hover:bg-red-600/80"
                   >
                     <BiSolidTrash />
                     Clear Cart
                   </button>
-                </div>
+                </div> */}
               </div>
 
               <div className="col-span-5 lg:col-span-2">
-                <div className="bg-white border border-gray-200 rounded-lg p-7">
+                <div className="border border-gray-300/60 shadow p-6">
                   <h1 className="text-sm font-semibold">Payment Summary</h1>
                   <div className="flex flex-col gap-5 mt-7">
                     <div className="flex items-center justify-between">
@@ -215,7 +226,7 @@ const Page = () => {
                   <div className="mt-12">
                     <Link
                       href={"/cart/checkout"}
-                      className={`animation inline-flex items-center gap-2 bg-black text-default text-xs font-medium rounded-lg px-5 py-3 hover:bg-black/80 ${
+                      className={`animation inline-flex items-center gap-2 bg-black text-white text-xs font-medium px-5 py-3 hover:bg-black/80 ${
                         anyOutOfStock
                           ? "disabled cursor-not-allowed opacity-50"
                           : ""
@@ -226,6 +237,13 @@ const Page = () => {
                     </Link>
                   </div>
                 </div>
+                <Link
+                    href={"/"}
+                    className="animation inline-flex items-center float-end gap-2 text-red-600 text-xs font-semibold mt-5 hover:bg-black/80"
+                  >
+                    <AiFillShop />
+                    Return to Shop
+                  </Link>
               </div>
             </div>
           </div>

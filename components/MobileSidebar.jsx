@@ -184,19 +184,22 @@ const MobileSidebar = ({ categories }) => {
                 Home
               </Link>
               <Link
-                href={"/"}
+                href={"/about-us"}
+                onClick={closeSidebar}
                 className="w-full font-medium border-b border-gray-300/60 py-4"
               >
                 About Us
               </Link>
               <Link
-                href={"/"}
+                href={"/contact"}
+                onClick={closeSidebar}
                 className="w-full font-medium border-b border-gray-300/60 py-4"
               >
                 Contact
               </Link>
               <Link
-                href={"/"}
+                href={"/stores"}
+                onClick={closeSidebar}
                 className="w-full font-medium border-b border-gray-300/60 py-4"
               >
                 Stores
