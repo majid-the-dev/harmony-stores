@@ -99,11 +99,13 @@ const Page = () => {
               Fill out our form and we will contact you within 24 hours.
               <br />
               Email: info@harmonystores.ng
+              <br />
+              Phone: +2347071793075
             </p>
 
-            <hr className="border-gray-200 my-10" />
+            {/* <hr className="border-gray-200 my-10" /> */}
 
-            <div className="flex flex-col gap-4">
+            {/* <div className="flex flex-col gap-4">
               <div className="flex items-start font-medium gap-3">
                 <Image
                   src={"/assets/location-icon-2.png"}
@@ -124,10 +126,10 @@ const Page = () => {
                   alt="icon"
                 />
                 <p className="text-gray-500 text-xs leading-5">
-                  +2348077286191, +2348178746892
+                  +2347071793075
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
