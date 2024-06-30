@@ -39,8 +39,8 @@ const ProductCard = ({ product, link }) => {
           />
         </div>
         {product?.discount && (
-          <div className="absolute top-3 left-0 gradient-bg text-white rounded-r-md px-2.5 py-1.5">
-            <p className="text-xs font-medium">
+          <div className="absolute top-3 left-0 gradient-bg text-white px-2 py-1">
+            <p className="text-[10px] font-medium">
               -
               {Math.round(
                 ((product?.price - product?.discount) / product?.price) * 100
@@ -67,7 +67,7 @@ const ProductCard = ({ product, link }) => {
         </p>
         {product?.discount ? (
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mt-2">
-            <p className="text-red-600 text-xs md:text-sm font-semibold">
+            <p className="text-red-600 text-xs md:text-sm font-bold">
               &#8358; {formatPrice(product?.discount)}
             </p>
             <p className="text-gray-400/80 text-xs md:text-sm font-medium line-through">
@@ -75,7 +75,7 @@ const ProductCard = ({ product, link }) => {
             </p>
           </div>
         ) : (
-          <p className="text-red-600 text-xs md:text-[13px] font-semibold mt-2">
+          <p className="text-red-600 text-xs md:text-[13px] font-bold mt-2">
             &#8358; {formatPrice(product?.price)}
           </p>
         )}
