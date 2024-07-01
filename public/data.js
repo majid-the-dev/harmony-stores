@@ -343,3 +343,22 @@ export const states = [
     heavy: 12000
   },
 ]
+
+export const carouselData = [
+  {
+    "src": "/assets/artboard-1.jpg",
+    "alt": "Image 1 for carousel"
+  },
+  {
+    "src": "/assets/artboard-2.jpg",
+    "alt": "Image 2 for carousel"
+  },
+  {
+    "src": "/assets/artboard-3.jpg",
+    "alt": "Image 3 for carousel"
+  },
+  // {
+  //   "src": "/assets/artboard-4.jpg",
+  //   "alt": "Image 3 for carousel"
+  // }
+]

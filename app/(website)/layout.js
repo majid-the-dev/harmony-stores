@@ -26,6 +26,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Harmony Stores NG",
   description: "Harmony Stores NG",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default async function RootLayout({ children }) {
@@ -34,7 +37,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel='icon' href='/assets/dark--logo.png'/>
+        <link rel='icon' href='/favicon.ico'/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body className={`${poppins.className} relative`}>
