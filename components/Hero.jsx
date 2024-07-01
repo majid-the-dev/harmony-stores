@@ -38,7 +38,7 @@ const Hero = () => {
             <CarouselContent>
               {carouselData.map((item) => (
                 <CarouselItem key={item.src}>
-                  <div className="relative w-full h-[180px] md:h-[380px]">
+                  <div className="relative w-full h-[170px] md:h-[380px]">
                     <Image src={item.src} layout="fill" objectFit="fill" />
                   </div>
                 </CarouselItem>
