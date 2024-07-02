@@ -9,102 +9,120 @@ import { GrGamepad } from "react-icons/gr";
 
 const TrendingCollections = () => {
   return (
-    <div className="w-full px-4 md:px-6">
+    <div className="w-full px-[10px] md:px-6">
       <div className="flex items-center gap-5">
-            <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">Trending Collections</h1>
-            <hr className="border-[0.5px] border-gray-300/80 w-full" />
-        </div>
-      <div className="mt-6 md:mt-8">
+        <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">
+          Trending Collections
+        </h1>
+        {/* <hr className="border-[0.5px] border-gray-300/80 w-full" /> */}
+      </div>
+      <div className="mt-6 md:mt-10">
         <div className="overflow-hidden">
-          <Marquee className="" pauseOnHover={true} speed={60}>
-            {/* <Link
-              href={"/"}
-              className="animation bg-orange-100 text-orange-600 font-semibold relative flex items-center gap-3 border border-orange-200 hover:shadow-md rounded-full px-14 py-5 mx-6"
-            >
-              <MdPhoneAndroid className="text-2xl" />
-              Smartphones
-            </Link> */}
+          <Marquee className="" pauseOnHover={true} speed={35}>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
-                  src={"/assets/smartphone-banner.png"}
+                  src={"/assets/smartphone-graphics.jpg"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-semibold">
+              <span className="text-center text-xs font-bold uppercase">
                 Smartphones
               </span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
-                  src={"/assets/tablet-banner.png"}
+                  src={"/assets/tablet-graphics.jpg"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-semibold">Tablets</span>
+              <span className="text-center text-xs font-bold uppercase">
+                Tablets
+              </span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
-                  src={"/assets/laptop-banner.png"}
+                  src={"/assets/laptop-graphics.jpg"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-semibold">Laptops</span>
+              <span className="text-center text-xs font-bold uppercase">
+                Laptops
+              </span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
-                  src={"/assets/tv-banner.png"}
+                  src={"/assets/accessory-graphics.jpg"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-semibold">Smart TVs</span>
+              <span className="text-center text-xs font-bold uppercase">
+                Accessories
+              </span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
-                  src={"/assets/ac-banner.png"}
+                  src={"/assets/tv-graphics.jpg"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-semibold">
+              <span className="text-center text-xs font-bold uppercase">
+                Smart TVs
+              </span>
+            </Link>
+
+            <Link href={"/"} className="flex flex-col justify-center gap-3">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
+                <Image
+                  src={"/assets/ac-graphics.jpg"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="fill"
+                  className="rounded-sm"
+                />
+              </div>
+              <span className="text-center text-xs font-bold uppercase">
                 Air Conditioners
               </span>
             </Link>
 
             <Link href={"/"} className="flex flex-col justify-center gap-3">
-              <div className="relative h-[150px] md:h-[200px] w-[150px] md:w-[200px] rounded-lg mx-4 md:mx-6">
+              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
-                  src={"/assets/printer-banner.png"}
+                  src={"/assets/printer-graphics.jpg"}
                   alt="banner"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-semibold">Printers</span>
+              <span className="text-center text-xs font-bold uppercase">
+                Printers
+              </span>
             </Link>
           </Marquee>
         </div>

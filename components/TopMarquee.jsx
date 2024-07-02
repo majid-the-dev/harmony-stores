@@ -3,8 +3,8 @@ import { RiArrowRightDoubleLine } from "react-icons/ri";
 
 const TopMarquee = () => {
   return (
-    <div className="w-full gradient-bg text-white text-xs md:text-sm font-semibold py-4 shadow">
-        <Marquee className="" pauseOnHover={true} speed={100}>
+    <div className="w-full bg-black text-white text-[11px] md:text-sm font-semibold py-4 shadow">
+        <Marquee className="" pauseOnHover={true} speed={60}>
             <p className="mx-20">Smart Devices for Smart Living</p>
             <p className="mx-20">Tech Deals You Can&apos;t Resist</p>
             <p className="mx-20">Empowering Your Digital Life</p>

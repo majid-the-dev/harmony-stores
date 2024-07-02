@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-lg">
-      <div className="mx-auto flex items-center justify-between px-4 md:px-6 py-0">
+      <div className="mx-auto flex items-center justify-between px-[10px] md:px-6 py-0">
         <div className="flex items-center gap-4">
           <div className="flex items-center">
             {/* <MobileNav /> */}
@@ -153,7 +153,7 @@ const Navbar = () => {
               </button>
               <Link href={"/cart"} className="relative">
                 <HiOutlineShoppingBag className="text-[18px] md:text-2xl" />
-                <span className="absolute -top-5 -right-3 gradient-bg text-white text-xs rounded-full px-1.5 py-0.5">
+                <span className="absolute -top-5 -right-3 bg-black text-white text-xs rounded-full px-1.5 py-0.5">
                   {cartProducts?.length}
                 </span>
               </Link>
@@ -162,7 +162,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={"/auth/sign-in"}
-                  className="gradient-bg text-white rounded-full text-[13px] md:text-lg p-1.5"
+                  className="bg-black text-white rounded-full text-[13px] md:text-lg p-1.5"
                 >
                   <GoPerson />
                 </Link>

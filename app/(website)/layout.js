@@ -14,7 +14,7 @@ import 'animate.css';
 import SearchBox from "@/components/SearchBox";
 import Link from "next/link";
 import Image from "next/image";
-
+import { LuTruck } from "react-icons/lu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +27,7 @@ export const metadata = {
   title: "Harmony Stores NG",
   description: "Harmony Stores NG",
   icons: {
-    icon: '/favicon.ico'
+    icon: '/assets/favicon.png'
   }
 };
 
@@ -45,6 +45,10 @@ export default async function RootLayout({ children }) {
           <ToasterProvider />
           <div>
             {/* <Header /> */}
+            {/* <div className="w-full flex items-center justify-center gap-2 h-4 text-black text-[12px] font-semibold py-5">
+              <LuTruck className="text-[14px]" />
+              Free delivery in Lagos and FCT
+            </div> */}
             {/* <div className="w-full h-1 gradient-bg"></div> */}
             <Navbar />
             <TopMarquee />

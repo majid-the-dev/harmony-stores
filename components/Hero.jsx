@@ -17,7 +17,7 @@ const Hero = () => {
   )
 
   return (
-    <div className="animation flex flex-wrap md:flex-nowrap gap-1 px-4 md:px-6 mt-4 md:mt-6">
+    <div className="animation flex flex-wrap md:flex-nowrap gap-1 px-[10px] md:px-6 mt-4 md:mt-6">
       <div className="w-full lg:w-2/3">
         {/* <div className="relative w-full h-[180px] md:h-[380px]">
           <Image
@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
 
       <div className="w-full lg:w-1/3 flex flex-wrap">
-        <div className="w-1/2 h-[150px] md:h-[190px] p-1">
+        <div className="w-1/2 h-[150px] md:h-[190px] pl-0 md:pl-1 pt-1 md:pt-0 p-1">
           <div className="relative w-full h-full">
             <Image
               src="/assets/Artboard-5.jpg"
@@ -60,7 +60,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 h-[150px] md:h-[190px] p-1">
+        <div className="w-1/2 h-[150px] md:h-[190px] pr-0 md:pr-1 pt-1 md:pt-0 p-1">
           <div className="relative w-full h-full">
             <Image
               src="/assets/Artboard-9.jpg"
@@ -71,7 +71,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 h-[150px] md:h-[190px] p-1">
+        <div className="w-1/2 h-[150px] md:h-[190px] pl-0 md:pl-1 pb-1 md:pb-0 p-1">
           <div className="relative w-full h-full">
             <Image
               src="/assets/Artboard-8.jpg"
@@ -82,7 +82,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="w-1/2 h-[150px] md:h-[190px] p-1">
+        <div className="w-1/2 h-[150px] md:h-[190px] pr-0 md:pr-1 pb-1 md:pb-0 p-1">
           <div className="relative w-full h-full">
             <Image
               src="/assets/Artboard-6.jpg"
