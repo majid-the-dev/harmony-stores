@@ -30,7 +30,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Smartphones
               </span>
             </Link>
@@ -45,7 +45,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Tablets
               </span>
             </Link>
@@ -60,7 +60,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Laptops
               </span>
             </Link>
@@ -75,7 +75,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Accessories
               </span>
             </Link>
@@ -90,7 +90,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Smart TVs
               </span>
             </Link>
@@ -105,7 +105,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Air Conditioners
               </span>
             </Link>
@@ -120,7 +120,7 @@ const TrendingCollections = () => {
                   className="rounded-sm"
                 />
               </div>
-              <span className="text-center text-xs font-bold uppercase">
+              <span className="text-center text-[10px] md:text-xs font-semibold">
                 Printers
               </span>
             </Link>
