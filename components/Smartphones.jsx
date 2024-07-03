@@ -39,7 +39,6 @@ const Smartphones = () => {
         <h1 className="text-[14px] md:text-xl text-left font-bold uppercase">
           Smartphones
         </h1>
-        {/* <hr className="border-[0.5px] border-gray-300/80 w-full" /> */}
         <Link href={'/category/Smartphones'} className="flex items-center gap-2 whitespace-nowrap text-orange-600 text-xs font-medium">
           See All
           <FaAnglesRight className="animate__animated animate__fadeInLeft animate__infinite animate__slower" />

@@ -200,6 +200,23 @@ const Page = () => {
       }
     });
 
+    const handlePageChange = (newPage) => {
+      setCurrentPage(newPage);
+      if (newPage > 1) {
+        router.push(
+          `/category/${name}?page=${newPage}`,
+          undefined,
+          { shallow: true }
+        );
+      } else {
+        router.push(
+          `/category/${name}`,
+          undefined,
+          { shallow: true }
+        );
+      }
+    };
+
   return (
     <>
       {loading ? (
@@ -560,9 +577,7 @@ const Page = () => {
                 <button
                   className="bg-black text-white flex items-center gap-4 text-xs font-medium px-6 py-3 mr-5 disabled:bg-black/60 disabled:cursor-not-allowed"
                   disabled={currentPage === 1}
-                  onClick={() =>
-                    setCurrentPage((prev) => Math.max(prev - 1, 1))
-                  }
+                  onClick={() => handlePageChange(currentPage - 1)}
                 >
                   <FaAnglesLeft />
                   Previous
@@ -570,9 +585,7 @@ const Page = () => {
                 <button
                   className="bg-black text-white flex items-center gap-4 text-xs font-medium px-6 py-3 disabled:bg-black/60 disabled:cursor-not-allowed"
                   disabled={currentPage === totalPages}
-                  onClick={() =>
-                    setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                  }
+                  onClick={() => handlePageChange(currentPage + 1)}
                 >
                   Next
                   <FaAnglesRight />
