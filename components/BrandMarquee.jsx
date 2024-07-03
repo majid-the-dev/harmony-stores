@@ -144,6 +144,94 @@ const BrandMarquee = () => {
                 />
               </div>
             </Link>
+            <Link href={"/"}>
+              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/asus.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/vivo.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/sony.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/nokia.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[70px] md:h-[130px] w-[70px] md:w-[130px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/fitbit.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[30px] md:h-[90px] w-[30px] md:w-[90px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/baseus.avif"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[25px] md:h-[85px] w-[25px] md:w-[85px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/dell.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[40px] md:h-[100px] w-[40px] md:w-[100px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/beats.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
           </Marquee>
         </div>
       </div>
