@@ -11,9 +11,9 @@ const TrendingCollections = () => {
   return (
     <div className="w-full px-[10px] md:px-6">
       <div className="flex items-center gap-5">
-        <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">
+        {/* <h1 className="text-[14px] md:text-xl text-left font-bold whitespace-nowrap">
           Trending Collections
-        </h1>
+        </h1> */}
         {/* <hr className="border-[0.5px] border-gray-300/80 w-full" /> */}
       </div>
       <div className="mt-6 md:mt-10">
