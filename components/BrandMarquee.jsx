@@ -35,7 +35,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[465px] md:h-[80px] w-[65px] md:w-[80px] rounded-lg mx-7 md:mx-12">
+              <div className="relative h-[65px] md:h-[80px] w-[65px] md:w-[80px] rounded-lg mx-7 md:mx-12">
                 <Image
                   src={"/assets/apple-logo.png"}
                   alt="banner"
@@ -89,8 +89,8 @@ const BrandMarquee = () => {
                 />
               </div>
             </Link>
-            {/* <Link href={"/"}>
-              <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] rounded-lg mx-10">
+            <Link href={"/"}>
+              <div className="relative h-[50px] md:h-[150px] w-[50px] md:w-[150px] rounded-lg mx-10">
                 <Image
                   src={"/assets/hp-logo.png"}
                   alt="banner"
@@ -99,7 +99,7 @@ const BrandMarquee = () => {
                   className="rounded-lg"
                 />
               </div>
-            </Link> */}
+            </Link>
             <Link href={"/"}>
               <div className="relative h-[70px] md:h-[110px] w-[70px] md:w-[110px] rounded-lg mx-7 md:mx-12">
                 <Image
