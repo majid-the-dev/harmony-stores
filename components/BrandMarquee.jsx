@@ -13,7 +13,7 @@ const BrandMarquee = () => {
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
             <Link href={"/"}>
-              <div className="relative h-[80px] md:h-[150px] w-[80px] md:w-[150px] rounded-lg mx-7 md:mx-12">
+              <div className="relative h-[110px] md:h-[150px] w-[110px] md:w-[150px] rounded-lg mx-7 md:mx-12">
                 <Image
                   src={"/assets/infinix-logo.png"}
                   alt="banner"
@@ -35,7 +35,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[45px] md:h-[80px] w-[45px] md:w-[80px] rounded-lg mx-7 md:mx-12">
+              <div className="relative h-[465px] md:h-[80px] w-[65px] md:w-[80px] rounded-lg mx-7 md:mx-12">
                 <Image
                   src={"/assets/apple-logo.png"}
                   alt="banner"
@@ -46,7 +46,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[90px] md:h-[150px] w-[90px] md:w-[150px] rounded-lg mx-7 md:mx-12">
+              <div className="relative h-[110px] md:h-[150px] w-[110px] md:w-[150px] rounded-lg mx-7 md:mx-12">
                 <Image
                   src={"/assets/samsung-logo.png"}
                   alt="banner"
@@ -134,7 +134,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+              <div className="relative h-[75px] md:h-[120px] w-[75px] md:w-[120px] rounded-lg mx-12">
                 <Image
                   src={"/assets/logitech-logo.png"}
                   alt="banner"
@@ -145,7 +145,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+              <div className="relative h-[72px] md:h-[120px] w-[72px] md:w-[120px] rounded-lg mx-12">
                 <Image
                   src={"/assets/asus.png"}
                   alt="banner"
@@ -156,18 +156,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/vivo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+              <div className="relative h-[80px] md:h-[120px] w-[80px] md:w-[120px] rounded-lg mx-12">
                 <Image
                   src={"/assets/sony.png"}
                   alt="banner"
@@ -178,7 +167,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[120px] w-[60px] md:w-[120px] rounded-lg mx-12">
+              <div className="relative h-[90px] md:h-[120px] w-[90px] md:w-[120px] rounded-lg mx-12">
                 <Image
                   src={"/assets/nokia.png"}
                   alt="banner"
@@ -189,7 +178,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[70px] md:h-[130px] w-[70px] md:w-[130px] rounded-lg mx-12">
+              <div className="relative h-[105px] md:h-[130px] w-[105px] md:w-[130px] rounded-lg mx-12">
                 <Image
                   src={"/assets/fitbit.png"}
                   alt="banner"
@@ -200,7 +189,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[30px] md:h-[90px] w-[30px] md:w-[90px] rounded-lg mx-12">
+              <div className="relative h-[60px] md:h-[90px] w-[60px] md:w-[90px] rounded-lg mx-12">
                 <Image
                   src={"/assets/baseus.avif"}
                   alt="banner"
@@ -211,7 +200,7 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[25px] md:h-[85px] w-[25px] md:w-[85px] rounded-lg mx-12">
+              <div className="relative h-[60px] md:h-[85px] w-[60px] md:w-[85px] rounded-lg mx-12">
                 <Image
                   src={"/assets/dell.png"}
                   alt="banner"
@@ -222,9 +211,31 @@ const BrandMarquee = () => {
               </div>
             </Link>
             <Link href={"/"}>
-              <div className="relative h-[40px] md:h-[100px] w-[40px] md:w-[100px] rounded-lg mx-12">
+              <div className="relative h-[80px] md:h-[100px] w-[80px] md:w-[100px] rounded-lg mx-12">
                 <Image
                   src={"/assets/beats.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[60px] md:h-[90px] w-[60px] md:w-[90px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/jbl-logo.png"}
+                  alt="banner"
+                  layout="fill"
+                  objectFit="contain"
+                  className="rounded-lg"
+                />
+              </div>
+            </Link>
+            <Link href={"/"}>
+              <div className="relative h-[190px] md:h-[230px] w-[190px] md:w-[230px] rounded-lg mx-12">
+                <Image
+                  src={"/assets/kardon-logo.png"}
                   alt="banner"
                   layout="fill"
                   objectFit="contain"
