@@ -20,7 +20,7 @@ const TrendingCollections = () => {
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={35}>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Smartphones"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/smartphone-graphics.jpg"}
@@ -35,7 +35,7 @@ const TrendingCollections = () => {
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Tablets"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/tablet-graphics.jpg"}
@@ -50,7 +50,7 @@ const TrendingCollections = () => {
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Laptops"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/laptop-graphics.jpg"}
@@ -65,7 +65,7 @@ const TrendingCollections = () => {
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Accessories"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/accessory-graphics.jpg"}
@@ -80,7 +80,7 @@ const TrendingCollections = () => {
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Electronics"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/tv-graphics.jpg"}
@@ -95,7 +95,7 @@ const TrendingCollections = () => {
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Electronics"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/ac-graphics.jpg"}
@@ -110,7 +110,7 @@ const TrendingCollections = () => {
               </span>
             </Link>
 
-            <Link href={"/"} className="flex flex-col justify-center gap-3">
+            <Link href={"/category/Printers"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
                 <Image
                   src={"/assets/printer-graphics.jpg"}
