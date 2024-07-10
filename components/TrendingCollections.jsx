@@ -16,9 +16,9 @@ const TrendingCollections = () => {
         </h1> */}
         {/* <hr className="border-[0.5px] border-gray-300/80 w-full" /> */}
       </div>
-      <div className="mt-6 md:mt-10">
-        <div className="overflow-hidden">
-          <Marquee className="" pauseOnHover={true} speed={35}>
+      <div className="scroll mt-6 md:mt-10 overflow-scroll">
+        <div className="scroll flex items-center md:justify-center overflow-x-scroll">
+          {/* <Marquee className="" pauseOnHover={true} speed={35}> */}
 
             <Link href={"/category/Smartphones"} className="flex flex-col justify-center gap-3">
               <div className="relative h-[100px] md:h-[150px] w-[100px] md:w-[150px] mx-4 md:mx-6">
@@ -124,7 +124,7 @@ const TrendingCollections = () => {
                 Printers
               </span>
             </Link>
-          </Marquee>
+          {/* </Marquee> */}
         </div>
       </div>
     </div>
