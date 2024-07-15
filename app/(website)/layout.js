@@ -15,6 +15,7 @@ import SearchBox from "@/components/SearchBox";
 import Link from "next/link";
 import Image from "next/image";
 import { LuTruck } from "react-icons/lu";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,6 +69,7 @@ export default async function RootLayout({ children }) {
           <Image src={'/assets/whatsapp-icon.png'} width={60} height={60} alt="icon" />
           <span className="absolute -top-1 right-0 bg-red-600 text-white text-xs font-bold rounded-full px-2 py-1">1</span>
         </Link>
+        <Analytics />
       </body>
     </html>
   );
