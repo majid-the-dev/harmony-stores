@@ -26,7 +26,7 @@ export default function Home() {
       {/* Hero */}
       <Hero />
 
-      <div className="flex flex-col items-center justify-center px-4 md:px-6">
+      {/* <div className="flex flex-col items-center justify-center px-4 md:px-6">
         <h1 className="text-[19px] md:text-3xl font-bold text-center">
           Welcome to Harmony Stores NG{" "}
           <span className="font-normal">&#8482;</span>
@@ -36,7 +36,7 @@ export default function Home() {
           exceptional customer service firsthand. We are here to help you find the
           perfect solutions for your electronic needs.
         </p>
-      </div>
+      </div> */}
 
       {/* Trending Collections */}
       {/* <TrendingCollections /> */}
