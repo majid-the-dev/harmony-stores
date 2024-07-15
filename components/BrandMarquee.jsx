@@ -5,10 +5,9 @@ import Marquee from "react-fast-marquee";
 const BrandMarquee = () => {
   return (
     <div className="w-full px-4 md:px-6">
-        <div className="flex items-center gap-5">
-            <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">Shop Brands</h1>
-            <hr className="border-[0.5px] border-gray-300/80 w-full" />
-        </div>
+      <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">
+        Shop Brands
+      </h1>
       <div className="mt-5">
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>

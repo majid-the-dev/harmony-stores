@@ -28,7 +28,8 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center px-4 md:px-6 mt-0">
         <h1 className="text-[19px] md:text-3xl font-bold text-center">
-          Welcome to Harmony Stores NG <span className="font-normal">&#8482;</span>
+          Welcome to Harmony Stores NG{" "}
+          <span className="font-normal">&#8482;</span>
         </h1>
         <p className="w-full max-w-2xl text-center text-xs text-gray-500 mt-3 leading-5">
           We invite you to explore our wide range of products and experience our
@@ -47,6 +48,41 @@ export default function Home() {
       {/* Laptops */}
       <Laptops />
 
+      <div className="w-full px-4 md:px-6">
+        <div className="flex flex-wrap justify-center">
+          <div className="w-1/3 p-2">
+            <Image
+              src={'/assets/zfold-promotion-1.jpeg'}
+              alt="Image"
+              layout="responsive"
+              width={500}
+              height={500}
+              className="object-cover"
+            />
+          </div>
+          <div className="w-1/3 p-2">
+          <Image
+              src={'/assets/zfold-promotion-2.jpeg'}
+              alt="Image"
+              layout="responsive"
+              width={500}
+              height={500}
+              className="object-cover"
+            />
+          </div>
+          <div className="w-1/3 p-2">
+          <Image
+              src={'/assets/zfold-promotion-2.jpeg'}
+              alt="Image"
+              layout="responsive"
+              width={500}
+              height={500}
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Accessories */}
       <Accessories />
 
@@ -59,7 +95,7 @@ export default function Home() {
       <BrandMarquee />
 
       {/* Customer Feedback */}
-      <CustomerFeedback />
+      {/* <CustomerFeedback /> */}
 
       {/* <div className="relative w-full h-[350px]">
         <Image

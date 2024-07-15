@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full px-6 pb-10">
+    <div className="w-full px-6 pb-10 ">
       <div className="px-10 pt-10 pb-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-11">
           <div className="col-span-1 flex flex-col items-center gap-1">
