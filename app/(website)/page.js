@@ -20,27 +20,26 @@ export default function Home() {
   const { session, status } = useSession();
 
   return (
-    <div className="relative flex flex-col gap-10 md:gap-16">
+    <div className="relative flex flex-col gap-10 md:gap-14 bg-gray-100/70 pb-14">
       {/* <SearchBox /> */}
 
       {/* Hero */}
       <Hero />
 
-      <div className="flex flex-col items-center justify-center px-4 md:px-6 mt-0">
+      <div className="flex flex-col items-center justify-center px-4 md:px-6">
         <h1 className="text-[19px] md:text-3xl font-bold text-center">
           Welcome to Harmony Stores NG{" "}
           <span className="font-normal">&#8482;</span>
         </h1>
-        <p className="w-full max-w-2xl text-center text-xs text-gray-500 mt-3 leading-5">
+        <p className="w-full max-w-2xl text-center text-sm mt-3 leading-6">
           We invite you to explore our wide range of products and experience our
-          exceptional customer service firsthand. Whether you are shopping
-          online or visiting one of our stores, we are here to help you find the
+          exceptional customer service firsthand. We are here to help you find the
           perfect solutions for your electronic needs.
         </p>
       </div>
 
       {/* Trending Collections */}
-      <TrendingCollections />
+      {/* <TrendingCollections /> */}
 
       {/* Smartphones */}
       <Smartphones />
@@ -106,7 +105,7 @@ export default function Home() {
       </div> */}
 
       {/* Why Choose Use */}
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
     </div>
   );
 }

@@ -44,7 +44,7 @@ const Smartphones = () => {
           <FaAnglesRight className="animate__animated animate__fadeInLeft animate__infinite animate__slower" />
         </Link>
       </div>
-      <div className="mt-6 md:mt-8 shadow-lg shadow-gray-200/80 p-7">
+      <div className="bg-white rounded shadow-md shadow-gray-200/80 mt-6 p-7">
         {loading ? (
           <div className="flex items-center justify-center py-32">
             <LoaderIcon size={35} className="animate-spin text-default" />

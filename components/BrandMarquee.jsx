@@ -8,7 +8,7 @@ const BrandMarquee = () => {
       <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">
         Shop Brands
       </h1>
-      <div className="mt-5">
+      <div className="bg-white rounded shadow-md shadow-gray-200/80 p-7 mt-5">
         <div className="overflow-hidden">
           <Marquee className="" pauseOnHover={true} speed={60}>
             <Link href={"/"}>
