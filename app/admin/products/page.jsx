@@ -45,7 +45,7 @@ const Page = () => {
       };
 
       const data = await response.json();
-      setProducts(data);
+      setProducts(data.reverse());
     } catch (error) {
       toast.error("Error fetching products!");
     } finally {
