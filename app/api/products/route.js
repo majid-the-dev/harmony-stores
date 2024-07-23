@@ -5,8 +5,8 @@ import mongoose from "mongoose";
 
 export const POST = async (req) => {
     await mongooseConnect();
-    const {title, brand, category, condition, description, price, discount, availability, freeDelivery, weightClass, properties, images} = await req.json();
-    const productDoc = await Products.create({ title, brand, category, condition, description, price, discount: discount || null, availability, freeDelivery, weightClass, properties, images });
+    const {title, brand, category, condition, description, price, discount, availability, freeDelivery, weightClass, freeGift, properties, images} = await req.json();
+    const productDoc = await Products.create({ title, brand, category, condition, description, price, discount: discount || null, availability, freeDelivery, weightClass, freeGift: freeGift || null, properties, images });
     return Response.json(productDoc);
 };
 
@@ -29,7 +29,7 @@ export const DELETE = async (req) => {
 
 export const PUT = async (req) => {
     await mongooseConnect();
-    const { id, title, brand, category, condition, description, price, discount, availability, freeDelivery, weightClass, properties, images } = await req.json();
+    const { id, title, brand, category, condition, description, price, discount, availability, freeDelivery, weightClass, freeGift, properties, images } = await req.json();
     
     // Correctly instantiate ObjectId with 'new'
     const categoryObjectId = new mongoose.Types.ObjectId(category);
@@ -37,7 +37,7 @@ export const PUT = async (req) => {
     try {
         const productDoc = await Products.findByIdAndUpdate(
             id,
-            { title, brand, category: categoryObjectId, condition, description, price, discount, availability, freeDelivery, weightClass, properties, images },
+            { title, brand, category: categoryObjectId, condition, description, price, discount, availability, freeDelivery, weightClass, freeGift, properties, images },
             { new: true } // Ensure the updated document is returned
         ).populate({ path: 'category', strictPopulate: false });
 

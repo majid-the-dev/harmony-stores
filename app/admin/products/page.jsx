@@ -1,7 +1,6 @@
 "use client";
 
 import AddProductModal from "@/components/admin/AddProductModal";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { CgTrashEmpty } from "react-icons/cg";

@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/table";
 import { CartContext } from "@/components/AppContext";
 import { BiSolidMessageRounded } from "react-icons/bi";
+import { IoGiftSharp } from "react-icons/io5";
 
 const Page = () => {
   const { id } = useParams();
@@ -153,6 +154,15 @@ const Page = () => {
               <MdOutlineAddShoppingCart className="text-[17px]" />
               ADD TO CART
             </button>
+          </div>
+          <div className="mt-5">
+            {product.freeGift && (
+              <p className="inline-flex items-center gap-2 bg-red-100 text-red-600 text-xs font-medium border border-red-200 px-3 py-2">
+                {/* <IoGiftSharp className="text-lg" /> */}
+                Get a free iphone charger and Oraimo power bank when you
+                purchase this item.
+              </p>
+            )}
           </div>
           <div className="mt-8">
             <Link

@@ -75,7 +75,7 @@ const AuthForm = ({ type }) => {
           toast.success("Account created successfully!");
           router.push("/auth/sign-in");
         }
-      }
+      };
 
       if (type === "sign-in") {
         setIsLoading(true);
@@ -101,7 +101,7 @@ const AuthForm = ({ type }) => {
             router.replace("/");
           };
         }
-      }
+      };
 
     } catch (error) {
       console.log(error);

@@ -24,6 +24,7 @@ const AddProductModal = ({ onProductCreated }) => {
   const [uploading, setUploading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isDiscountValid, setIsDiscountValid] = useState(true);
+  const [isChecked, setIsChecked] = useState(false);
 
   const [title, setTitle] = useState("");
   const [brand, setBrand] = useState("");
@@ -37,6 +38,17 @@ const AddProductModal = ({ onProductCreated }) => {
   const [condition, setCondition] = useState("");
   const [freeDelivery, setFreeDelivery] = useState("");
   const [weightClass, setWeightClass] = useState("");
+  const [freeGift, setFreeGift] = useState(null);
+
+  const handleCheckboxChange = (e) => {
+    const checked = e.target.checked;
+    setIsChecked(checked);
+
+    if (!checked) {
+      setFreeGift(null);
+    };
+  };
+
 
   useEffect(() => {
     getCategories();
@@ -142,6 +154,7 @@ const AddProductModal = ({ onProductCreated }) => {
           availability,
           freeDelivery,
           weightClass,
+          freeGift: isChecked ? freeGift : null,
           properties,
           images,
         }),
@@ -356,6 +369,24 @@ const AddProductModal = ({ onProductCreated }) => {
                   </SelectContent>
                 </Select>
               </div>
+
+              <label className="inline-flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange} />
+                <span className="text-sm font-medium">Free Gift</span>
+              </label>
+
+              {isChecked && (
+                <div className="flex flex-col gap-3">
+                  <label className="text-xs text-gray-500">Free Gift Description</label>
+                  <input
+                    type="text"
+                    name="freeGift"
+                    value={freeGift || null}
+                    onChange={(e) => setFreeGift(e.target.value)}
+                    className="text-sm font-medium border border-input rounded-lg px-3 py-2 outline-none focus:border-default"
+                  />
+                </div>
+              )}
 
               <div className="flex flex-col gap-3">
                 <label className="text-xs text-gray-500">

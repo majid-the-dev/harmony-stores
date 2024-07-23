@@ -39,8 +39,8 @@ const ProductCard = ({ product, link }) => {
           />
         </div>
         {product?.discount && (
-          <div className="absolute top-3 left-0 gradient-bg text-white px-2 py-1">
-            <p className="text-[10px] font-medium">
+          <div className="md:bg-red-100 absolute top-3 left-0 text-red-600 px-2 py-1">
+            <p className="text-xs font-semibold">
               -
               {Math.round(
                 ((product?.price - product?.discount) / product?.price) * 100
@@ -49,6 +49,7 @@ const ProductCard = ({ product, link }) => {
             </p>
           </div>
         )}
+        {product.freeGift && (<Image src={'/assets/free-gift-icon.png'} alt="icon" height={50} width={50} className="absolute top-0 right-0" />)}
         {/* <button className="absolute right-3 bottom-3">
           <GoHeartFill className="text-gray-300 text-xl hover:text-default" />
         </button> */}

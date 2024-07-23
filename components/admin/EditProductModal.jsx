@@ -22,7 +22,8 @@ const EditProductModal = ({ product, setIsEdit, onProductEdited }) => {
   const [fetchCategories, setFetchCategories] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
+  const [isChecked, setIsChecked] = useState(!!product.freeGift);
+  
   const [title, setTitle] = useState(product.title || "");
   const [brand, setBrand] = useState(product.brand || "");
   const [category, setCategory] = useState(product.category._id || "");
@@ -35,6 +36,16 @@ const EditProductModal = ({ product, setIsEdit, onProductEdited }) => {
   const [condition, setCondition] = useState(product.condition || "");
   const [freeDelivery, setFreeDelivery] = useState(product.freeDelivery || "");
   const [weightClass, setWeightClass] = useState(product.weightClass || "");
+  const [freeGift, setFreeGift] = useState(product.freeGift || null);
+
+  const handleCheckboxChange = (e) => {
+    const checked = e.target.checked;
+    setIsChecked(checked);
+
+    if (!checked) {
+      setFreeGift(null);
+    }
+  };
 
   useEffect(() => {
     getCategories();
@@ -141,6 +152,7 @@ const EditProductModal = ({ product, setIsEdit, onProductEdited }) => {
           availability,
           freeDelivery,
           weightClass,
+          freeGift: isChecked ? freeGift : null,
           properties,
           images,
         }),
@@ -336,6 +348,30 @@ const EditProductModal = ({ product, setIsEdit, onProductEdited }) => {
                 </SelectContent>
               </Select>
             </div>
+
+            <label className="inline-flex items-center gap-3 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={isChecked}
+                onChange={handleCheckboxChange}
+              />
+              <span className="text-sm font-medium">Free Gift</span>
+            </label>
+
+            {isChecked && (
+              <div className="flex flex-col gap-3">
+                <label className="text-xs text-gray-500">
+                  Free Gift Description
+                </label>
+                <input
+                  type="text"
+                  name="freeGift"
+                  value={freeGift || null}
+                  onChange={(e) => setFreeGift(e.target.value)}
+                  className="text-sm font-medium border border-input rounded-lg px-3 py-2 outline-none focus:border-default"
+                />
+              </div>
+            )}
 
             <div className="flex flex-col gap-3">
               <label className="text-xs text-gray-500">

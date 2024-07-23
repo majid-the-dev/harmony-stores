@@ -47,6 +47,10 @@ const ProductsSchema = new Schema({
     freeDelivery: {
         type: String,
         required: true 
+    },
+    freeGift: {
+        type: String,
+        // required: true
     }
 }, { timestamps: true});
 
