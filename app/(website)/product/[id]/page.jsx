@@ -159,8 +159,7 @@ const Page = () => {
             {product.freeGift && (
               <p className="inline-flex items-center gap-2 bg-red-100 text-red-600 text-xs font-medium border border-red-200 px-3 py-2">
                 {/* <IoGiftSharp className="text-lg" /> */}
-                Get a free iphone charger and Oraimo power bank when you
-                purchase this item.
+                {product.freeGift}
               </p>
             )}
           </div>
