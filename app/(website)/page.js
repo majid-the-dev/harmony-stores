@@ -15,9 +15,14 @@ import Smartphones from "@/components/Smartphones";
 import Laptops from "@/components/Laptops";
 import Accessories from "@/components/Accessories";
 import Link from "next/link";
+import { IoClose } from "react-icons/io5";
+import { useState } from "react";
+import PromoPopup from "@/components/PromoPopup";
 
 export default function Home() {
+
   const { session, status } = useSession();
+  const [promo, setPromo] = useState(true);
 
   return (
     <div className="relative flex flex-col gap-10 md:gap-14 bg-gray-100/70 pb-14">
@@ -51,7 +56,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center">
           <div className="w-1/3 p-2">
             <Image
-              src={'/assets/zfold-promotion-1.jpeg'}
+              src={"/assets/zfold-promotion-1.jpeg"}
               alt="Image"
               layout="responsive"
               width={500}
@@ -60,8 +65,8 @@ export default function Home() {
             />
           </div>
           <div className="w-1/3 p-2">
-          <Image
-              src={'/assets/zfold-promotion-2.jpeg'}
+            <Image
+              src={"/assets/zfold-promotion-2.jpeg"}
               alt="Image"
               layout="responsive"
               width={500}
@@ -70,8 +75,8 @@ export default function Home() {
             />
           </div>
           <div className="w-1/3 p-2">
-          <Image
-              src={'/assets/zfold-promotion-2.jpeg'}
+            <Image
+              src={"/assets/zfold-promotion-2.jpeg"}
               alt="Image"
               layout="responsive"
               width={500}
@@ -106,6 +111,8 @@ export default function Home() {
 
       {/* Why Choose Use */}
       {/* <WhyChooseUs /> */}
+
+      <PromoPopup />
     </div>
   );
 }
