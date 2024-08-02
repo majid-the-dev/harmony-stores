@@ -346,10 +346,6 @@ export const states = [
 
 export const carouselData = [
   {
-    "src": "/assets/free-gift-artboard.jpg",
-    "alt": "Image 1 for carousel"
-  },
-  {
     "src": "/assets/artboard-1.jpg",
     "alt": "Image 2 for carousel"
   },

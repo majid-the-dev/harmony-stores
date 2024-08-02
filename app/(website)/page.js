@@ -112,7 +112,7 @@ export default function Home() {
       {/* Why Choose Use */}
       {/* <WhyChooseUs /> */}
 
-      <PromoPopup />
+      {/* <PromoPopup /> */}
     </div>
   );
 }
