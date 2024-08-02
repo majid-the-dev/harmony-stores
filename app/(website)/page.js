@@ -52,62 +52,13 @@ export default function Home() {
       {/* Laptops */}
       <Laptops />
 
-      <div className="w-full px-4 md:px-6">
-        <div className="flex flex-wrap justify-center">
-          <div className="w-1/3 p-2">
-            <Image
-              src={"/assets/zfold-promotion-1.jpeg"}
-              alt="Image"
-              layout="responsive"
-              width={500}
-              height={500}
-              className="object-cover"
-            />
-          </div>
-          <div className="w-1/3 p-2">
-            <Image
-              src={"/assets/zfold-promotion-2.jpeg"}
-              alt="Image"
-              layout="responsive"
-              width={500}
-              height={500}
-              className="object-cover"
-            />
-          </div>
-          <div className="w-1/3 p-2">
-            <Image
-              src={"/assets/zfold-promotion-2.jpeg"}
-              alt="Image"
-              layout="responsive"
-              width={500}
-              height={500}
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </div>
-
       {/* Accessories */}
       <Accessories />
-
-      {/* New Arrivals */}
-      {/* <NewArrivals /> */}
-
-      {/* Trending Products */}
-      {/* <TrendingProducts /> */}
 
       <BrandMarquee />
 
       {/* Customer Feedback */}
       {/* <CustomerFeedback /> */}
-
-      {/* <div className="relative w-full h-[350px]">
-        <Image
-          src={"/assets/site-banner-1.png"}
-          layout="fill"
-          objectFit="contain"
-        />
-      </div> */}
 
       {/* Why Choose Use */}
       {/* <WhyChooseUs /> */}
