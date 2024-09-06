@@ -65,7 +65,7 @@ export default async function RootLayout({ children }) {
           <Image src={'/assets/whatsapp-icon.png'} width={60} height={60} alt="icon" />
           <span className="text-xs font-semibold hidden md:block">How can we help you?</span>
         </Link> */}
-        <Link target="_blank" href={"https://wa.me/+2347071793075/"} className="fixed bottom-8 right-4 z-50">
+        <Link target="_blank" href={"https://wa.me/+2348182012345/"} className="fixed bottom-8 right-4 z-50">
           <Image src={'/assets/whatsapp-icon.png'} width={60} height={60} alt="icon" />
           <span className="absolute -top-1 right-0 bg-red-600 text-white text-xs font-bold rounded-full px-2 py-1">1</span>
         </Link>

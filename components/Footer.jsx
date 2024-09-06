@@ -140,7 +140,7 @@ const Footer = () => {
               Socials
             </h1>
             <div className="flex flex-col gap-7 mt-8">
-              <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="animation text-white/80 text-xs hover:translate-x-2">
+              <Link target="_blank" href={"https://wa.me/+2348182012345/"} className="animation text-white/80 text-xs hover:translate-x-2">
                 WhatsApp
               </Link>
               <Link

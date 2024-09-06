@@ -25,7 +25,7 @@ const PickupSchedule = ({ pickupSchedule, setPickupSchedule, setPickupLocation }
       <label className="text-xs text-gray-400 font-normal mt-6">
         Select your pickup location (Mon-Sat availability)
       </label>
-      <span className=" mt-3">
+      <span className="mt-3">
         <Select onValueChange={(value) => setPickupLocation(value)}>
           <SelectTrigger className="text-sm font-semibold">
             <SelectValue placeholder="Select store location" />

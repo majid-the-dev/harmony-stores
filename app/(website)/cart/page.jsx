@@ -184,23 +184,6 @@ const Page = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* <div className="flex items-center justify-between mt-4 lg:mt-6">
-                  <Link
-                    href={"/"}
-                    className="animation flex items-center gap-2 bg-black text-white text-xs font-medium px-5 py-3 mt-5 hover:bg-black/80"
-                  >
-                    <AiFillShop />
-                    Return to Shop
-                  </Link>
-                  <button
-                    onClick={() => clearCart()}
-                    className="animation flex items-center gap-2 bg-red-600 text-white text-xs font-medium px-5 py-3 mt-5 hover:bg-red-600/80"
-                  >
-                    <BiSolidTrash />
-                    Clear Cart
-                  </button>
-                </div> */}
               </div>
 
               <div className="col-span-5 lg:col-span-2">

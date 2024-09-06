@@ -30,7 +30,7 @@ const AccountDropdownLg = () => {
       <DropdownMenuContent className="mt-5 mr-6 p-4">
         <DropdownMenuLabel className="py-4">
           <div className="flex items-center gap-3">
-            <p className="bg-black text-white text-xl rounded-lg p-2">{user.firstName[0]}{user.lastName[0]}</p>
+            <p className="bg-black text-white text-xl rounded-lg p-2">{user?.firstName[0]}{user?.lastName[0]}</p>
             <div className="flex flex-col gap-1">
               <span className="text-sm font-normal">{user.firstName} {user.lastName}</span>
               <span className="text-xs text-gray-500 font-light">{user.email}</span>
