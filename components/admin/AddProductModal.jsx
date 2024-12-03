@@ -46,9 +46,8 @@ const AddProductModal = ({ onProductCreated }) => {
 
     if (!checked) {
       setFreeGift(null);
-    };
+    }
   };
-
 
   useEffect(() => {
     getCategories();
@@ -371,13 +370,19 @@ const AddProductModal = ({ onProductCreated }) => {
               </div>
 
               <label className="inline-flex items-center gap-3 cursor-pointer">
-                <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange} />
+                <input
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                />
                 <span className="text-sm font-medium">Free Gift</span>
               </label>
 
               {isChecked && (
                 <div className="flex flex-col gap-3">
-                  <label className="text-xs text-gray-500">Free Gift Description</label>
+                  <label className="text-xs text-gray-500">
+                    Free Gift Description
+                  </label>
                   <input
                     type="text"
                     name="freeGift"

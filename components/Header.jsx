@@ -20,7 +20,7 @@ const Header = () => {
       </p>
 
       <div className="hidden md:flex items-center gap-6 text-white text-sm">
-        <Link target="_blank" href={"https://wa.me/+2348077286191/"}>
+        <Link target="_blank" href={"https://wa.me/+2348182012345/"}>
           <IoLogoWhatsapp className="text-white text-[17px]" />
         </Link>
         <Link

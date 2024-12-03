@@ -182,7 +182,7 @@ const Page = () => {
           <hr className="my-7" />
           <Link
             target="_blank"
-            href={"https://wa.me/+2348077286191/"}
+            href={"https://wa.me/+2348182012345/"}
             className="bg-orange-100 text-orange-600 text-xs font-medium inline-flex items-center gap-2 rounded-full px-5 py-2"
           >
             <BiSolidMessageRounded className="text-[17px]" /> Have any inquiry?{" "}

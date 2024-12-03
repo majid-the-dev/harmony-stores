@@ -13,15 +13,30 @@ import DeleteProductModal from "./DeleteProductModal";
 import { useState } from "react";
 import EditProductModal from "./EditProductModal";
 
-const ProductActionDropdown = ({ product, onDelete, onEdit, onProductEdited }) => {
-
+const ProductActionDropdown = ({
+  product,
+  onDelete,
+  onEdit,
+  onProductEdited,
+}) => {
   const [isModal, setIsModal] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
 
   return (
     <DropdownMenu className="overflow-visible">
-      {isEdit && <EditProductModal product={product} setIsEdit={setIsEdit} onProductEdited={onProductEdited} />}
-      {isModal && <DeleteProductModal setIsModal={setIsModal} onDelete={() => onDelete(product._id)} />}
+      {isEdit && (
+        <EditProductModal
+          product={product}
+          setIsEdit={setIsEdit}
+          onProductEdited={onProductEdited}
+        />
+      )}
+      {isModal && (
+        <DeleteProductModal
+          setIsModal={setIsModal}
+          onDelete={() => onDelete(product._id)}
+        />
+      )}
       <DropdownMenuTrigger className="flex items-center justify-center text-sm font-medium outline-none">
         <BsThreeDotsVertical className="text-gray-500" />
       </DropdownMenuTrigger>

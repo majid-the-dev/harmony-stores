@@ -218,7 +218,7 @@ const Page = () => {
               />
             </Link>
           </div> */}
-          <Link target="_blank" href={"https://wa.me/+2348077286191/"} className="bg-orange-100 text-orange-600 text-xs font-medium inline-flex items-center gap-2 rounded-full px-5 py-2"><BiSolidMessageRounded className="text-[17px]" /> Have any inquiry? <span className="underline">Chat with us</span></Link>
+          <Link target="_blank" href={"https://wa.me/+2348182012345/"} className="bg-orange-100 text-orange-600 text-xs font-medium inline-flex items-center gap-2 rounded-full px-5 py-2"><BiSolidMessageRounded className="text-[17px]" /> Have any inquiry? <span className="underline">Chat with us</span></Link>
           {/* <div className="inline-block bg-gray-50 border border-gray-200 rounded-lg mt-10">
             <div className="flex items-center gap-4 border-b border-gray-200 p-5">
               <Image
