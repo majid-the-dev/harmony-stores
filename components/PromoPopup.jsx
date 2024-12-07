@@ -29,7 +29,7 @@ const PromoPopup = () => {
           <IoClose />
         </button>
         <Image
-          src={"/assets/promo-banner.jpeg"}
+          src={"/assets/sales-banner.jpeg"}
           alt="banner"
           height={500}
           width={500}
