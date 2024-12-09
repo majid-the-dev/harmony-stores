@@ -52,7 +52,7 @@ const Hero = () => {
         <div className="w-1/2 h-[150px] md:h-[190px] pl-0 md:pl-1 pt-1 md:pt-0 p-1">
           <div className="relative w-full h-full">
             <Image
-              src="/assets/Artboard-5.jpg"
+              src="/assets/sales-side-banner.png"
               alt="Image 1"
               layout="fill"
               objectFit="fill"
@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="w-1/2 h-[150px] md:h-[190px] pr-0 md:pr-1 pt-1 md:pt-0 p-1">
           <div className="relative w-full h-full">
             <Image
-              src="/assets/Artboard-9.jpg"
+              src="/assets/sales-side-banner-2.png"
               alt="Image 2"
               layout="fill"
               objectFit="fill"
@@ -74,7 +74,7 @@ const Hero = () => {
         <div className="w-1/2 h-[150px] md:h-[190px] pl-0 md:pl-1 pb-1 md:pb-0 p-1">
           <div className="relative w-full h-full">
             <Image
-              src="/assets/Artboard-8.jpg"
+              src="/assets/sales-side-banner-3.png"
               alt="Image 3"
               layout="fill"
               objectFit="fill"
@@ -85,7 +85,7 @@ const Hero = () => {
         <div className="w-1/2 h-[150px] md:h-[190px] pr-0 md:pr-1 pb-1 md:pb-0 p-1">
           <div className="relative w-full h-full">
             <Image
-              src="/assets/Artboard-6.jpg"
+              src="/assets/sales-side-banner-4.png"
               alt="Image 4"
               layout="fill"
               objectFit="fill"
