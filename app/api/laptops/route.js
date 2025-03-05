@@ -15,7 +15,7 @@ export const GET = async (req) => {
     }
 
     const products = await Products.find({ category: category._id })
-      .limit(6)
+      .limit(4)
       .exec();
 
     return new Response(JSON.stringify(products), {

@@ -18,18 +18,20 @@ import Link from "next/link";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import PromoPopup from "@/components/PromoPopup";
+import BestSellers from "@/components/BestSellers";
+import Newsletter from "@/components/Newsletter";
 
 export default function Home() {
-
   const { session, status } = useSession();
   const [promo, setPromo] = useState(true);
 
   return (
-    <div className="relative flex flex-col gap-10 md:gap-14 bg-gray-100/70 pb-14">
+    <div className="relative flex flex-col bg-white">
       {/* <SearchBox /> */}
 
       {/* Hero */}
       <Hero />
+      {/* <BestSellers /> */}
 
       {/* <div className="flex flex-col items-center justify-center px-4 md:px-6">
         <h1 className="text-[19px] md:text-3xl font-bold text-center">
@@ -55,7 +57,8 @@ export default function Home() {
       {/* Accessories */}
       <Accessories />
 
-      <BrandMarquee />
+      {/* <BrandMarquee /> */}
+      <Newsletter />
 
       {/* Customer Feedback */}
       {/* <CustomerFeedback /> */}

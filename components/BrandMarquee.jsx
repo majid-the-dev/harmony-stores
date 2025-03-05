@@ -2,249 +2,51 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
+const brandLogos = [
+  { src: "/assets/infinix-logo.png", alt: "Infinix", href: "/" },
+  { src: "/assets/itel-logo.png", alt: "Itel", href: "/" },
+  { src: "/assets/apple-logo.png", alt: "Apple", href: "/" },
+  { src: "/assets/samsung-logo.png", alt: "Samsung", href: "/" },
+  { src: "/assets/redmi-logo.png", alt: "Redmi", href: "/" },
+  { src: "/assets/tecno-logo.png", alt: "Tecno", href: "/" },
+  { src: "/assets/hp-logo.png", alt: "HP", href: "/" },
+  { src: "/assets/acer-logo.png", alt: "Acer", href: "/" },
+  { src: "/assets/lenovo-logo.png", alt: "Lenovo", href: "/" },
+  { src: "/assets/transcend-logo.png", alt: "Transcend", href: "/" },
+  { src: "/assets/logitech-logo.png", alt: "Logitech", href: "/" },
+  { src: "/assets/asus.png", alt: "Asus", href: "/" },
+  { src: "/assets/sony.png", alt: "Sony", href: "/" },
+  { src: "/assets/nokia.png", alt: "Nokia", href: "/" },
+  { src: "/assets/fitbit.png", alt: "Fitbit", href: "/" },
+  { src: "/assets/baseus.avif", alt: "Baseus", href: "/" },
+  { src: "/assets/dell.png", alt: "Dell", href: "/" },
+  { src: "/assets/beats.png", alt: "Beats", href: "/" },
+  { src: "/assets/jbl-logo.png", alt: "JBL", href: "/" },
+  { src: "/assets/kardon-logo.png", alt: "Harman Kardon", href: "/" },
+];
+
+const BrandLogo = ({ src, alt, href }) => (
+  <Link href={href}>
+    <div className="relative h-20 w-20 md:h-23 md:w-23 mx-4 md:mx-10">
+      <Image
+        src={src || "/placeholder.svg"}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 80px, 112px"
+        className="object-contain"
+      />
+    </div>
+  </Link>
+);
+
 const BrandMarquee = () => {
   return (
-    <div className="w-full px-4 md:px-6">
-      <h1 className="text-[14px] md:text-xl text-left font-bold uppercase whitespace-nowrap">
-        Shop Brands
-      </h1>
-      <div className="bg-white rounded shadow-md shadow-gray-200/80 p-7 mt-5">
-        <div className="overflow-hidden">
-          <Marquee className="" pauseOnHover={true} speed={60}>
-            <Link href={"/"}>
-              <div className="relative h-[110px] md:h-[150px] w-[110px] md:w-[150px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/infinix-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[70px] md:h-[110px] w-[70px] md:w-[110px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/itel-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[65px] md:h-[80px] w-[65px] md:w-[80px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/apple-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[110px] md:h-[150px] w-[110px] md:w-[150px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/samsung-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[55px] md:h-[85px] w-[55px] md:w-[85px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/redmi-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            {/* <Link href={"/"}>
-              <div className="relative h-[68px] md:h-[100px] w-[68px] md:w-[100px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/huawei-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link> */}
-            <Link href={"/"}>
-              <div className="relative h-[80px] md:h-[140px] w-[80px] md:w-[140px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/tecno-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[50px] md:h-[150px] w-[50px] md:w-[150px] rounded-lg mx-10">
-                <Image
-                  src={"/assets/hp-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[70px] md:h-[110px] w-[70px] md:w-[110px] rounded-lg mx-7 md:mx-12">
-                <Image
-                  src={"/assets/acer-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[80px] md:h-[110px] w-[80px] md:w-[110px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/lenovo-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[120px] md:h-[180px] w-[120px] md:w-[180px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/transcend-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[75px] md:h-[120px] w-[75px] md:w-[120px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/logitech-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[72px] md:h-[120px] w-[72px] md:w-[120px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/asus.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[80px] md:h-[120px] w-[80px] md:w-[120px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/sony.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[90px] md:h-[120px] w-[90px] md:w-[120px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/nokia.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[105px] md:h-[130px] w-[105px] md:w-[130px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/fitbit.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[90px] w-[60px] md:w-[90px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/baseus.avif"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[85px] w-[60px] md:w-[85px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/dell.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[80px] md:h-[100px] w-[80px] md:w-[100px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/beats.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[60px] md:h-[90px] w-[60px] md:w-[90px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/jbl-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-            <Link href={"/"}>
-              <div className="relative h-[190px] md:h-[230px] w-[190px] md:w-[230px] rounded-lg mx-12">
-                <Image
-                  src={"/assets/kardon-logo.png"}
-                  alt="banner"
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
-                />
-              </div>
-            </Link>
-          </Marquee>
-        </div>
-      </div>
+    <div className="bg-gray-100/90 py-10 mt-20">
+      <Marquee className="overflow-hidden" pauseOnHover={true} speed={40}>
+        {brandLogos.map((logo, index) => (
+          <BrandLogo key={index} {...logo} />
+        ))}
+      </Marquee>
     </div>
   );
 };
