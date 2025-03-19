@@ -13,7 +13,11 @@ import { ArrowRight } from "lucide-react";
 import Avatar1 from "@/public/assets/hero-avatar-1.png";
 import Avatar2 from "@/public/assets/hero-avatar-2.png";
 import Avatar3 from "@/public/assets/hero-avatar-3.png";
+import Avatar4 from "@/public/assets/harmony-hauwei-collab.jpg";
 import CardBG from "../public/assets/samsung-a56-promotion.jpeg";
+import { IoCloseOutline } from "react-icons/io5";
+import Link from "next/link";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Hero = () => {
   const plugin = React.useRef(
@@ -198,17 +202,34 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="bg-gray-700 rounded-3xl p-6 flex flex-col justify-between bg-[url('../public/assets/homepod-promotion-asset.jpg')] bg-cover bg-center bg-no-repeat h-[260px]">
-              <div>
-                <h2 className="text-white text-2xl font-bold">5% OFF</h2>
+            <div className="relative bg-gray-700 rounded-3xl p-5 flex flex-col items-end justify-end bg-[url('../public/assets/harmony-hauwei-collab.jpg')] bg-cover bg-no-repeat h-[260px]">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/95 to-transparent rounded-xl"></div>
+              {/* <div>
+                <h2 className="text-white text-2xl font-bold">HUAWEI</h2>
                 <p className="text-white text-sm md:text-base font-medium mt-1">
-                  Smart accessories for everyone
+                  Harmony X Huawei
                 </p>
-              </div>
-              <div className="mt-4 flex justify-end">
-                <button className="gradient-bg hover:bg-gray-500 text-white px-5 py-2 rounded-full transition-colors text-sm font-bold">
+              </div> */}
+              <div className="w-full mt-4 flex items-center justify-between gap-12 z-10">
+                <div>
+                  <h2 className="text-white text-lg font-bold uppercase">
+                    HUAWEI Partnership
+                  </h2>
+                  <p className="text-white/80 text-[12px] font-light max-w-[80%] my-0.5">
+                    We are dedicated to bringing faster, smarter, and more reliable
+                    network solutions to our customers.
+                  </p>
+                  <Link
+                    href={"/"}
+                    className="flex items-center gap-1 text-white/80 text-[12px] hover:underline underline-offset-2"
+                  >
+                    See products
+                    <IoIosArrowRoundForward size={20} className="mt-[2px]" />
+                  </Link>
+                </div>
+                {/* <button className="gradient-bg hover:bg-gray-500 text-white px-5 py-2 rounded-full transition-colors text-sm font-bold whitespace-nowrap">
                   Explore Now
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
