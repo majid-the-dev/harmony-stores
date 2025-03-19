@@ -221,7 +221,7 @@ const Hero = () => {
                   </p>
                   <Link
                     href={"/"}
-                    className="flex items-center gap-1 text-white/80 text-[12px] hover:underline underline-offset-2"
+                    className="inline-flex items-center gap-1 text-white/80 text-[12px] hover:underline underline-offset-2"
                   >
                     See products
                     <IoIosArrowRoundForward size={20} className="mt-[2px]" />
